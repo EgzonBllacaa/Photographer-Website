@@ -6,7 +6,11 @@ const Contact = () => {
   return (
     <div>
       <FullWidth>
-        <img src="/Hero_img_1.jpg" alt="" />
+        <img
+          src="/Hero_img_1.jpg"
+          className="max-h-[800px] w-full object-cover"
+          alt=""
+        />
       </FullWidth>
       <CoverLetter
         heading="I can’t wait to hear from you!"
