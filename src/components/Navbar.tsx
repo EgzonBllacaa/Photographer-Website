@@ -7,6 +7,7 @@ import { Link } from "react-router";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isInfoOpen, setIsInfoOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
 
         {/* ====== Mobile Full-Screen Menu ====== */}
         <ul
-          className={`fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center gap-8 text-lg transform transition-transform duration-300 ease-in-out md:hidden z-40 ${
+          className={`fixed top-0 left-0 w-full h-full bg-white  flex flex-col items-center justify-center gap-8 text-lg transform transition-transform duration-300 ease-in-out md:hidden z-40 ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -58,24 +59,38 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-          <li className="relative group">
-            <span className="p-3 uppercase cursor-pointer">Info</span>
-            <div className="absolute left-1/2 -translate-x-1/2 mt-4 w-64 uppercase text-zinc-500 bg-white py-4 text-center rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-              <Link
-                className="block px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800"
-                to={"/about"}
-                onClick={() => setIsOpen(false)}
-              >
-                About Jordan
-              </Link>
-              <Link
-                className="block px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800"
-                to={"/investment"}
-                onClick={() => setIsOpen(false)}
-              >
-                Investment
-              </Link>
-            </div>
+          <li className="relative flex flex-col items-center">
+            <span
+              className="p-3 uppercase cursor-pointer"
+              onClick={() => setIsInfoOpen((prev) => !prev)}
+            >
+              Info
+            </span>
+
+            {isInfoOpen && (
+              <div className="mt-2 w-64 uppercase text-zinc-500 bg-white py-4 text-center rounded-lg shadow-lg transition-all duration-200">
+                <Link
+                  className="block px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800"
+                  to={"/about"}
+                  onClick={() => {
+                    setIsOpen(false);
+                    setIsInfoOpen(false);
+                  }}
+                >
+                  About Jordan
+                </Link>
+                <Link
+                  className="block px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800"
+                  to={"/investment"}
+                  onClick={() => {
+                    setIsOpen(false);
+                    setIsInfoOpen(false);
+                  }}
+                >
+                  Investment
+                </Link>
+              </div>
+            )}
           </li>
 
           {/* Mobile social icons */}
