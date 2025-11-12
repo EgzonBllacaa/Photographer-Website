@@ -11,13 +11,13 @@ const sections = [
     title: "Weddings",
     content: "WA/OR starting at $7,500 Destination starting at $8,500",
     cta: "Get in Touch",
-    imgSrc: "/Hero_img_1.jpg",
+    imgSrc: "/IMG_8.jpg",
   },
   {
     title: "Elopements",
     content: "WA/OR starting at $5,750 Destination starting at $6,750",
     cta: "Get in Touch",
-    imgSrc: "/Hero_img_1.jpg",
+    imgSrc: "/IMG_10.jpg",
   },
 ];
 
@@ -26,12 +26,12 @@ const PricingSection = () => {
     <div className="mb-30">
       {sections.map((section, index) => (
         <section
-          className={`flex w-full items-center  ${
-            index % 2 !== 0 ? "flex-row-reverse" : ""
+          className={`flex w-full items-center flex-col sm:flex-row ${
+            index % 2 !== 0 ? "sm:flex-row-reverse " : ""
           }`}
           key={index}
         >
-          <div className="w-1/2 flex flex-col gap-6 px-32 py-20 items-center">
+          <div className="sm:w-1/2 w-full flex flex-col gap-6 px-32 py-20 items-center">
             <h3 className="text-3xl uppercase tracking-wider">
               {section.title}
             </h3>
@@ -42,7 +42,7 @@ const PricingSection = () => {
               {section.cta}
             </Link>
           </div>
-          <img src={section.imgSrc} className="w-1/2" />
+          <img src={section.imgSrc} className="sm:w-1/2 w-full" />
         </section>
       ))}
     </div>

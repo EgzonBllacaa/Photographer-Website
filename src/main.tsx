@@ -7,7 +7,9 @@ import App from "./App.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Router>
-      <App />
+      <div className="px-3 md:px-0">
+        <App />
+      </div>
     </Router>
   </StrictMode>
 );

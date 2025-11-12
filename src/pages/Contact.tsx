@@ -7,8 +7,8 @@ const Contact = () => {
     <div>
       <FullWidth>
         <img
-          src="/Hero_img_1.jpg"
-          className="max-h-[800px] w-full object-cover"
+          src="/IMG_5.jpg"
+          className="min-h-[400px] max-h-[800px] w-full object-cover"
           alt=""
         />
       </FullWidth>

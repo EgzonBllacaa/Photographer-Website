@@ -71,7 +71,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       className="mx-auto max-w-3xl w-full flex flex-col gap-8 my-10"
     >
-      <div className="flex gap-5 w-full items-center">
+      <div className="flex flex-col sm:flex-row gap-5 w-full items-center">
         <div className="flex flex-col w-full">
           <label htmlFor="">First Name:*</label>
           <input
@@ -93,7 +93,7 @@ const ContactForm = () => {
           />
         </div>
       </div>
-      <div className="flex gap-5 w-full items-center">
+      <div className="flex flex-col sm:flex-row gap-5 w-full items-center">
         <div className="flex flex-col w-full">
           <label htmlFor="">Partner's First Name</label>
           <input

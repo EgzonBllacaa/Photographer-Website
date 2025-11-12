@@ -3,7 +3,7 @@ import { Link } from "react-router";
 const About = () => {
   return (
     <div className="max-w-3xl flex flex-col gap-10 mx-auto mt-40 mb-10">
-      <img src="/Hero_img_1.jpg" className="w-full" alt="" />
+      <img src="/IMG_7.jpg" className="w-full" alt="" />
       <div className="flex flex-col gap-3 items-center text-center text-zinc-600 leading-loose">
         <p>
           I’m a portrait & wedding photographer based in Seattle, WA. I’ve been

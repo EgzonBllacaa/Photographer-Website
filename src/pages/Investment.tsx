@@ -8,8 +8,8 @@ const Investment = () => {
     <div>
       <FullWidth>
         <img
-          src="/Investment_img_1.jpg"
-          className="max-h-[880px] w-full object-cover"
+          src="/IMG_4.jpg"
+          className="min-h-[400px] max-h-[880px] w-full object-cover"
           alt=""
         />
       </FullWidth>
