@@ -1,4 +1,5 @@
 import { useState } from "react";
+import FadeIn from "../components/FadeIn";
 
 const sections = [
   {
@@ -87,14 +88,16 @@ const Portfolio = () => {
       </div>
       <div className="flex justify-center gap-4 flex-wrap">
         {filteredSections.map((section, index) => (
-          <div
-            key={index}
-            className="max-w-lg w-full flex flex-col items-center"
-          >
-            <img src={section.imgSrc} alt="" className="w-full" />
-            <h3 className="text-md mt-2">{section.title}</h3>
-            <p className="text-zinc-500 text-sm">{section.tagName}</p>
-          </div>
+          <FadeIn amount={0}>
+            <div
+              key={index}
+              className="max-w-lg w-full flex flex-col items-center"
+            >
+              <img src={section.imgSrc} alt="" className="w-full" />
+              <h3 className="text-md mt-2">{section.title}</h3>
+              <p className="text-zinc-500 text-sm">{section.tagName}</p>
+            </div>
+          </FadeIn>
         ))}
       </div>
     </div>

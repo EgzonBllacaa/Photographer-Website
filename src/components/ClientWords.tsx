@@ -68,7 +68,7 @@ const ClientWords = () => {
         <div className="flex gap-3 items-center w-full">
           <button
             onClick={handlePrevious}
-            className="bg-amber-800/65 text-white rounded-3xl p-3"
+            className="bg-amber-800/65 text-white rounded-3xl p-3 cursor-pointer hover:bg-amber-800/80"
           >
             <BsArrowLeft />
           </button>
@@ -84,7 +84,7 @@ const ClientWords = () => {
           </div>
           <button
             onClick={handleNext}
-            className="bg-amber-800/65 text-white rounded-3xl p-3"
+            className="bg-amber-800/65 hover:bg-amber-800/80 text-white rounded-3xl p-3 cursor-pointer"
           >
             <BsArrowRight />
           </button>

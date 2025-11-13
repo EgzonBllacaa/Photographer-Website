@@ -43,6 +43,7 @@ const Home = () => {
           ))}
         </div>
       </FullWidth>
+
       <CoverLetter
         heading="Human Connection is a beautiful thing"
         content="And is at the heart of my photography. I’m drawn to the authentic,
