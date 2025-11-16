@@ -32,6 +32,7 @@ const ContactForm = () => {
 
   const validateForm = () => {
     const newErrors: { [key: string]: string } = {};
+
     if (formData.firstName.trim() === "")
       newErrors.firstName = "First name is required";
     if (formData.email.trim() === "") newErrors.email = "Email is required";

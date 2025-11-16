@@ -4,16 +4,21 @@ import FullWidth from "../components/FullWidth";
 import PhotoGallery from "../components/PhotoGallery";
 
 const images = [
-  "/IMG_4.jpg",
-  "/IMG_5.jpg",
-  "/Investment_img_1.jpg",
-  "/IMG_6.jpg",
-  "/IMG_7.jpg",
-  "/IMG_8.jpg",
-  "/Hero_img_1.jpg",
-  "/IMG_9.jpg",
-  "/IMG_10.jpg",
-  "/IMG_3.jpg",
+  "medina.jpg",
+  "marigona.jpg",
+  "marigona2.jpg",
+  "marigona3.jpg",
+  "qlirimi 1.jpg",
+  // "/IMG_4.jpg",
+  // "/IMG_5.jpg",
+  // "/Investment_img_1.jpg",
+  // "/IMG_6.jpg",
+  // "/IMG_7.jpg",
+  // "/IMG_8.jpg",
+  // "/Hero_img_1.jpg",
+  // "/IMG_9.jpg",
+  // "/IMG_10.jpg",
+  // "/IMG_3.jpg",
 ];
 
 const Home = () => {
@@ -36,7 +41,7 @@ const Home = () => {
               key={index}
               src={src}
               alt=""
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+              className={`absolute inset-0 w-full h-full object-cover object-[center_50%]  transition-opacity duration-1000 ease-in-out ${
                 index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             />

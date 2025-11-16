@@ -6,19 +6,19 @@ const sections = [
     title: "Portraits",
     content: "WA/OR starting at $1,500 Destination starting at $2,500",
     cta: "Get in Touch",
-    imgSrc: "/Hero_img_1.jpg",
+    imgSrc: "/medina.jpg",
   },
   {
     title: "Weddings",
     content: "WA/OR starting at $7,500 Destination starting at $8,500",
     cta: "Get in Touch",
-    imgSrc: "/IMG_8.jpg",
+    imgSrc: "/marigona2.jpg",
   },
   {
     title: "Elopements",
     content: "WA/OR starting at $5,750 Destination starting at $6,750",
     cta: "Get in Touch",
-    imgSrc: "/IMG_10.jpg",
+    imgSrc: "/marigona.jpg",
   },
 ];
 

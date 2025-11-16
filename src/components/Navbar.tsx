@@ -156,8 +156,8 @@ const Navbar = () => {
         </ul>
 
         {/* Center logo */}
-        <span className="md:text-4xl text-xl flex justify-center flex-1 font-serif">
-          <Link to={"/"}>JORDAN VOTH</Link>
+        <span className="md:text-4xl  flex justify-center flex-1 font-serif">
+          <Link to={"/"}>Riard Bllaca Photography</Link>
         </span>
 
         {/* Desktop icons */}
