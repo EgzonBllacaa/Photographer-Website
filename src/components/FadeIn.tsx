@@ -12,7 +12,7 @@ const FadeIn = ({ children, amount = 0.6 }: Props) => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount }}
-      transition={{ ease: "easeInOut", duration: 0.6 }}
+      transition={{ ease: "easeInOut", duration: 0.4 }}
     >
       {children}
     </motion.div>

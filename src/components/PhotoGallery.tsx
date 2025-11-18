@@ -56,7 +56,6 @@ const PhotoGallery = () => {
     <>
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4  p-4 ">
         {photos.map((photo, i) => (
-          // <FadeIn>
           <div
             key={i}
             className="relative mb-4 break-inside-avoid cursor-pointer"
@@ -73,7 +72,6 @@ const PhotoGallery = () => {
               alt={photo.alt}
             />
           </div>
-          // </FadeIn>
         ))}
       </div>
       {selected && (
