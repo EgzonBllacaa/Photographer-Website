@@ -5,7 +5,13 @@ const About = () => {
   return (
     <div className="max-w-3xl flex flex-col gap-10 mx-auto mt-40 mb-10">
       <FadeIn>
-        <img src="/IMG_7.jpg" className="w-full" alt="" />
+        <img
+          src="/IMG_7.webp"
+          loading="lazy"
+          sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
+          className="w-full"
+          alt=""
+        />
       </FadeIn>
       <FadeIn>
         <div className="flex flex-col gap-3 items-center text-center text-zinc-600 leading-loose">

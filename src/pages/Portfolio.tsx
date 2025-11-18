@@ -4,42 +4,42 @@ import ImageModal from "../components/ImageModal";
 
 const sections = [
   {
-    imgSrc: "/IMG_6.jpg",
+    imgSrc: "/IMG_6.webp",
     title: "Intimate joshua tree wedding",
     tagName: "Weddings",
   },
   {
-    imgSrc: "/IMG_7.jpg",
+    imgSrc: "/IMG_7.webp",
     title: "Seattle portrait session with emma",
     tagName: "Weddings",
   },
   {
-    imgSrc: "/qlirimi 1.jpg",
+    imgSrc: "/qlirimi 1.webp",
     title: "Intimate joshua tree wedding",
     tagName: "Weddings",
   },
   {
-    imgSrc: "/qlirimi2.jpg",
+    imgSrc: "/qlirimi2.webp",
     title: "Seattle portrait session with emma",
     tagName: "Weddings",
   },
   {
-    imgSrc: "/IMG_10.jpg",
+    imgSrc: "/IMG_10.webp",
     title: "Intimate joshua tree wedding",
     tagName: "Portraits",
   },
   {
-    imgSrc: "/IMG_3.jpg",
+    imgSrc: "/IMG_3.webp",
     title: "Seattle portrait session with emma",
     tagName: "Portraits",
   },
   {
-    imgSrc: "/Hero_img_1.jpg",
+    imgSrc: "/Hero_img_1.webp",
     title: "Intimate joshua tree wedding",
     tagName: "Portraits",
   },
   {
-    imgSrc: "/Hero_img_1.jpg",
+    imgSrc: "/Hero_img_1.webp",
     title: "Seattle portrait session with emma",
     tagName: "Portraits",
   },
@@ -83,6 +83,8 @@ const Portfolio = () => {
             >
               <img
                 src={section.imgSrc}
+                loading="lazy"
+                sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
                 alt=""
                 className="w-full cursor-pointer"
               />

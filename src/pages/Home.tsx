@@ -4,21 +4,21 @@ import FullWidth from "../components/FullWidth";
 import PhotoGallery from "../components/PhotoGallery";
 
 const images = [
-  "medina.jpg",
-  "marigona.jpg",
-  "marigona2.jpg",
-  "marigona3.jpg",
-  "qlirimi 1.jpg",
-  // "/IMG_4.jpg",
-  // "/IMG_5.jpg",
-  // "/Investment_img_1.jpg",
-  // "/IMG_6.jpg",
-  // "/IMG_7.jpg",
-  // "/IMG_8.jpg",
-  // "/Hero_img_1.jpg",
-  // "/IMG_9.jpg",
-  // "/IMG_10.jpg",
-  // "/IMG_3.jpg",
+  "medina.webp",
+  "marigona.webp",
+  "marigona2.webp",
+  "marigona3.webp",
+  "qlirimi 1.webp",
+  // "/IMG_4.webp",
+  // "/IMG_5.webp",
+  // "/Investment_img_1.webp",
+  // "/IMG_6.webp",
+  // "/IMG_7.webp",
+  // "/IMG_8.webp",
+  // "/Hero_img_1.webp",
+  // "/IMG_9.webp",
+  // "/IMG_10.webp",
+  // "/IMG_3.webp",
 ];
 
 const Home = () => {
@@ -38,8 +38,10 @@ const Home = () => {
         <div className="relative w-full max-h-[800px] h-[800px] overflow-hidden">
           {images.map((src, index) => (
             <img
-              key={index}
               src={src}
+              loading="lazy"
+              key={index}
+              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
               alt=""
               className={`absolute inset-0 w-full h-full object-cover object-[center_50%]  transition-opacity duration-1000 ease-in-out ${
                 index === currentIndex ? "opacity-100" : "opacity-0"

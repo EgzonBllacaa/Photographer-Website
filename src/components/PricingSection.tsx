@@ -6,19 +6,19 @@ const sections = [
     title: "Portraits",
     content: "WA/OR starting at $1,500 Destination starting at $2,500",
     cta: "Get in Touch",
-    imgSrc: "/medina.jpg",
+    imgSrc: "/medina.webp",
   },
   {
     title: "Weddings",
     content: "WA/OR starting at $7,500 Destination starting at $8,500",
     cta: "Get in Touch",
-    imgSrc: "/marigona2.jpg",
+    imgSrc: "/marigona2.webp",
   },
   {
     title: "Elopements",
     content: "WA/OR starting at $5,750 Destination starting at $6,750",
     cta: "Get in Touch",
-    imgSrc: "/marigona.jpg",
+    imgSrc: "/marigona.webp",
   },
 ];
 
@@ -44,7 +44,12 @@ const PricingSection = () => {
                 {section.cta}
               </Link>
             </div>
-            <img src={section.imgSrc} className="sm:w-1/2 w-full" />
+            <img
+              src={section.imgSrc}
+              loading="lazy"
+              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
+              className="sm:w-1/2 w-full"
+            />
           </section>
         </FadeIn>
       ))}

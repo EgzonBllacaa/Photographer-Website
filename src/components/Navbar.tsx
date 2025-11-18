@@ -26,18 +26,20 @@ const Navbar = () => {
           : "md:bg-transparent"
       }`}
     >
-      <nav className="flex justify-between items-center">
+      {/* flex justify-between items-center */}
+      {/* grid place-items-center grid-cols-3  */}
+      <nav className=" flex items-center justify-between">
         {/* Hamburger icon */}
         <button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="text-2xl z-50 cursor-pointer md:hidden"
+          className="text-2xl z-50 cursor-pointer lg:hidden"
         >
           <GiHamburgerMenu />
         </button>
 
         {/* ====== Mobile Full-Screen Menu ====== */}
         <ul
-          className={`fixed top-0 left-0 w-full h-full bg-white  flex flex-col items-center justify-center gap-8 text-lg transform transition-transform duration-300 ease-in-out md:hidden z-40 ${
+          className={`fixed top-0 left-0 w-full h-full bg-white  flex flex-col items-center justify-center gap-8 text-lg transform transition-transform duration-300 ease-in-out lg:hidden z-40 ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -59,6 +61,18 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+          <li>
+            <Link
+              className="block uppercase px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800"
+              to={"/investment"}
+              onClick={() => {
+                setIsOpen(false);
+                setIsInfoOpen(false);
+              }}
+            >
+              Pricing
+            </Link>
+          </li>
           <li className="relative flex flex-col items-center">
             <span
               className="p-3 uppercase cursor-pointer"
@@ -78,16 +92,6 @@ const Navbar = () => {
                   }}
                 >
                   About Jordan
-                </Link>
-                <Link
-                  className="block px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800"
-                  to={"/investment"}
-                  onClick={() => {
-                    setIsOpen(false);
-                    setIsInfoOpen(false);
-                  }}
-                >
-                  Investment
                 </Link>
               </div>
             )}
@@ -119,7 +123,7 @@ const Navbar = () => {
         </ul>
 
         {/* ====== Desktop Menu ====== */}
-        <ul className="md:flex flex-1 items-center hidden text-sm">
+        <ul className="lg:flex flex-1 items-center hidden text-sm">
           <li>
             <Link
               className="p-5 uppercase hover:border-b-2 hover:text-amber-800"
@@ -136,6 +140,14 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+          <li>
+            <Link
+              className="p-5 uppercase  hover:text-amber-800 hover:border-b border-amber-800 "
+              to={"/investment"}
+            >
+              Pricing
+            </Link>
+          </li>
           <li className="relative group">
             <span className="p-5 uppercase cursor-pointer">Info</span>
             <div className="absolute left-0 w-70 uppercase text-zinc-500 bg-white py-4 text-center rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -145,38 +157,32 @@ const Navbar = () => {
               >
                 About Jordan
               </Link>
-              <Link
-                className="px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800 block"
-                to={"/investment"}
-              >
-                Investment
-              </Link>
             </div>
           </li>
         </ul>
 
         {/* Center logo */}
-        <span className="md:text-4xl  flex justify-center flex-1 font-serif">
+        <span className="lg:text-4xl sm:text-3xl text-lg  flex flex-1 sm:text-nowrap text-center justify-center font-serif">
           <Link to={"/"}>Riard Bllaca Photography</Link>
         </span>
 
         {/* Desktop icons */}
-        <div className="md:flex hidden flex-1 justify-end items-center">
+        <div className="lg:flex hidden  flex-1 justify-end items-center ">
           <Link
             to={"https://www.instagram.com/riardbllaca.photography/?hl=en"}
-            className="p-2"
+            className="px-5"
           >
             <FiInstagram width={34} height={34} />
           </Link>
           <Link
             to={"https://www.linkedin.com/in/riard-bllaca-514b7918a/"}
-            className="p-2"
+            className="px-5"
           >
             <FiLinkedin width={34} height={34} />
           </Link>
           <a
             href="mailto:riardbllaca9@gmail.com"
-            className="p-2"
+            className="px-5"
             target="_blank"
             rel="noopener noreferrer"
           >

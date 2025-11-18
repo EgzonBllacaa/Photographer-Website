@@ -4,43 +4,43 @@ import ImageModal from "./ImageModal";
 
 const photos = [
   {
-    src: "/marigona2.jpg",
+    src: "/marigona2.webp",
     alt: "Hero img",
   },
   {
-    src: "/Investment_img_1.jpg",
+    src: "/Investment_img_1.webp",
     alt: "Hero img",
   },
   {
-    src: "/agnesa1.jpg",
+    src: "/agnesa1.webp",
     alt: "Hero img",
   },
   {
-    src: "/agnesa1.jpg",
+    src: "/agnesa1.webp",
     alt: "Hero img",
   },
   {
-    src: "/shoqnia.jpg",
+    src: "/shoqnia.webp",
     alt: "Hero img",
   },
   {
-    src: "/decor.jpg",
+    src: "/decor.webp",
     alt: "Hero img",
   },
   {
-    src: "/IMG_7.jpg",
+    src: "/IMG_7.webp",
     alt: "Hero img",
   },
   {
-    src: "/IMG_8.jpg",
+    src: "/IMG_8.webp",
     alt: "Hero img",
   },
   {
-    src: "/fejesa isa boletini.jpeg",
+    src: "/fejesa isa boletini.webp",
     alt: "Hero img",
   },
   {
-    src: "/clirimires.jpg",
+    src: "/clirimires.webp",
     alt: "Hero img",
   },
 ];
@@ -66,7 +66,9 @@ const PhotoGallery = () => {
             }}
           >
             <img
-              className="w-full object-cover rounded-xl transition-transform duration-150 hover:scale-102 cursor-pointer"
+              className="w-full object-cover rounded-xl duration-300 hover:scale-102 cursor-pointer"
+              loading="lazy"
+              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
               src={photo.src}
               alt={photo.alt}
             />

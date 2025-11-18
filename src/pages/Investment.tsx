@@ -9,7 +9,9 @@ const Investment = () => {
     <div>
       <FullWidth>
         <img
-          src="/IMG_4.jpg"
+          src="/IMG_4.webp"
+          loading="lazy"
+          sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
           className="min-h-[400px] max-h-[880px] w-full object-cover"
           alt=""
         />
