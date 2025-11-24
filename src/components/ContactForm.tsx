@@ -1,5 +1,5 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
-import emailjs from "@emailjs/browser";
+  import emailjs from "@emailjs/browser";
 import * as EmailValidator from "email-validator";
 import FadeIn from "./FadeIn";
 import DatePicker from "react-datepicker";
@@ -9,18 +9,11 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    partnerFirstName: "",
-    partnerLastName: "",
     email: "",
     phone: "",
-    instagramHandle: "",
     interestedIn: "wedding",
-    hearAboutMe: "clientReferral",
     eventDate: "",
     eventLocation: "",
-    attractedToWork: "",
-    weekendActivities: "",
-    aboutYourselves: "",
   });
   const [error, setError] = useState<{ [key: string]: string }>({});
 
@@ -76,18 +69,11 @@ const ContactForm = () => {
           setFormData({
             firstName: "",
             lastName: "",
-            partnerFirstName: "",
-            partnerLastName: "",
             email: "",
             phone: "",
-            instagramHandle: "",
             interestedIn: "",
-            hearAboutMe: "",
             eventDate: "",
             eventLocation: "",
-            attractedToWork: "",
-            weekendActivities: "",
-            aboutYourselves: "",
           });
         },
         (error) => {
@@ -132,30 +118,6 @@ const ContactForm = () => {
         </div>
       </FadeIn>
       <FadeIn>
-        <div className="flex flex-col sm:flex-row gap-5 w-full items-center">
-          <div className="flex flex-col w-full">
-            <label htmlFor="">Partner's First Name</label>
-            <input
-              className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
-              type="text"
-              name="partnerFirstName"
-              value={formData.partnerFirstName}
-              onChange={handleOnChange}
-            />
-          </div>
-          <div className="flex flex-col w-full">
-            <label htmlFor="">Partner's Last Name</label>
-            <input
-              className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
-              type="text"
-              name="partnerLastName"
-              value={formData.partnerLastName}
-              onChange={handleOnChange}
-            />
-          </div>
-        </div>
-      </FadeIn>
-      <FadeIn>
         <div className="flex flex-col w-full">
           <label htmlFor="">Email:*</label>
           <input
@@ -184,18 +146,6 @@ const ContactForm = () => {
       </FadeIn>
       <FadeIn>
         <div className="flex flex-col w-full">
-          <label htmlFor="">Please share your Instagram handle(s):</label>
-          <input
-            className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
-            type="text"
-            name="instagramHandle"
-            value={formData.instagramHandle}
-            onChange={handleOnChange}
-          />
-        </div>
-      </FadeIn>
-      <FadeIn>
-        <div className="flex flex-col w-full">
           <label htmlFor="">We're interested in...</label>
           <select
             name="interestedIn"
@@ -204,29 +154,9 @@ const ContactForm = () => {
             className="border-b outline-none py-3 px-1 hover:border-b-amber-800 focus:bg-amber-800/10"
           >
             <option value="wedding">Wedding</option>
-            <option value="elopement">Elopement</option>
             <option value="engagement">Engagement</option>
             <option value="anniversary">Anniversary</option>
             <option value="commercial">Commercial</option>
-          </select>
-        </div>
-      </FadeIn>
-      <FadeIn>
-        {" "}
-        <div className="flex flex-col w-full">
-          <label htmlFor="">How did you hear about me?*</label>
-          <select
-            name="hearAboutMe"
-            value={formData.hearAboutMe}
-            onChange={handleOnChange}
-            className="border-b outline-none py-3 px-1 hover:border-b-amber-800 focus:bg-amber-800/10"
-          >
-            <option value="clientReferral">Client Referral</option>
-            <option value="google">Google</option>
-            <option value="instagram">Instagram</option>
-            <option value="facebook">Facebook</option>
-            <option value="pinterest">Pinterest</option>
-            <option value="other">Other</option>
           </select>
         </div>
       </FadeIn>
@@ -268,48 +198,6 @@ const ContactForm = () => {
           )}
         </div>
       </FadeIn>
-      <FadeIn>
-        <div className="flex flex-col w-full">
-          <label htmlFor="">What attracted you to my work?*</label>
-          <textarea
-            rows={2}
-            cols={10}
-            name="attractedToWork"
-            value={formData.attractedToWork}
-            onChange={handleOnChange}
-            className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
-          />
-        </div>
-      </FadeIn>
-      <FadeIn>
-        <div className="flex flex-col w-full">
-          <label htmlFor="">
-            What are your favorite things to do on the weekends?
-          </label>
-          <textarea
-            rows={2}
-            cols={10}
-            className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
-            name="weekendActivities"
-            value={formData.weekendActivities}
-            onChange={handleOnChange}
-          />
-        </div>
-      </FadeIn>
-      <FadeIn>
-        <div className="flex flex-col w-full">
-          <label htmlFor="">Tell me all about yourselves!*</label>
-          <textarea
-            rows={2}
-            cols={10}
-            className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
-            name="aboutYourselves"
-            value={formData.aboutYourselves}
-            onChange={handleOnChange}
-          />
-        </div>
-      </FadeIn>
-
       <button
         type="submit"
         className="px-10 py-3 text-center mx-auto bg-amber-800 text-white w-fit"

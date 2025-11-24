@@ -91,7 +91,7 @@ const Navbar = () => {
                     setIsInfoOpen(false);
                   }}
                 >
-                  About Jordan
+                  About Riard
                 </Link>
               </div>
             )}
@@ -155,7 +155,7 @@ const Navbar = () => {
                 className="px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800 block"
                 to={"/about"}
               >
-                About Jordan
+                About Riard
               </Link>
             </div>
           </li>

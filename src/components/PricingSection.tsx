@@ -4,7 +4,7 @@ import FadeIn from "./FadeIn";
 const sections = [
   {
     title: "Portraits",
-    content: "WA/OR starting at $1,500 Destination starting at $2,500",
+    content: "WA/OR starting at $1,500 Destination starting at $098989",
     cta: "Get in Touch",
     imgSrc: "/medina.webp",
   },

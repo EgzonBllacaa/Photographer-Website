@@ -2,9 +2,10 @@ import { Link } from "react-router";
 import FadeIn from "./FadeIn";
 
 type Props = {
-  heading: string;
+  heading?: string;
   content: string;
   content2?: string;
+  content3?: string;
   captureText?: string;
   linkTo?: string;
   linkToText?: string;
@@ -14,6 +15,7 @@ const CoverLetter = ({
   heading,
   content,
   content2,
+  content3,
   captureText,
   linkTo,
   linkToText,
@@ -35,11 +37,16 @@ const CoverLetter = ({
             {content2}
           </p>
         )}
+        {content3 && (
+          <p className="text-center text-md leading-loose text-zinc-500 ">
+            {content3}
+          </p>
+        )}
         {linkTo && (
           <Link
             to={`/${linkTo}`}
             className={`${
-              linkToText === "More about Jordan"
+              linkToText === "More about Riard"
                 ? "text-amber-800/70 text-sm underline"
                 : "px-12 py-6 bg-orange-900/60 tracking-wider text-white uppercase mt-10"
             } `}
