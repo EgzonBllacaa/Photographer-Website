@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 // import FadeIn from "../components/FadeIn";
 import ImageModal from "../components/ImageModal";
+import FadeIn from "../components/FadeIn";
 // import { GiCardKingClubs } from "react-icons/gi";
 
 export const sections = [
@@ -343,7 +344,6 @@ const Portfolio = () => {
       </div>
       <div className="columns-1 sm:columns-2  md:columns-3  lg:columns-4 p-4 gap-6">
         {filteredSections.map((section, index) => (
-          // <FadeIn amount={0}>
           <>
             <div
               key={index}
@@ -353,20 +353,20 @@ const Portfolio = () => {
               }}
               className="max-w-lg w-full break-inside-avoid  flex flex-col mb-5 items-center"
             >
-              <img
-                src={section.imgSrc}
-                loading="lazy"
-                sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
-                alt=""
-                className="w-full cursor-pointer"
-              />
-
+              <FadeIn amount={0}>
+                <img
+                  src={section.imgSrc}
+                  loading="lazy"
+                  sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
+                  alt=""
+                  className="w-full cursor-pointer"
+                />
+              </FadeIn>
               <h3 className="text-md mt-2">{section.title}</h3>
               <p className="text-zinc-500 text-sm">{section.tagName}</p>
               <p className="text-sm text-zinc-500">{section.content}</p>
             </div>
           </>
-          // </FadeIn>
         ))}
         {selected && (
           <ImageModal

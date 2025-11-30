@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ImageModal from "./ImageModal";
 import { images2 } from "../pages/Home";
+import FadeIn from "./FadeIn";
 
 const PhotoGallery = () => {
   const [selected, setSelected] = useState<null | string>(null);
@@ -23,13 +24,15 @@ const PhotoGallery = () => {
               setScrollDisabled(true);
             }}
           >
-            <img
-              className="w-full  rounded-xl duration-300 hover:scale-105 transition-transform"
-              loading="lazy"
-              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
-              src={photo.src}
-              alt={photo.alt || "Gallery image"}
-            />
+            <FadeIn>
+              <img
+                className="w-full  rounded-xl duration-300 hover:scale-105 transition-transform"
+                loading="lazy"
+                sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
+                src={photo.src}
+                alt={photo.alt || "Gallery image"}
+              />
+            </FadeIn>
           </div>
         ))}
       </div>

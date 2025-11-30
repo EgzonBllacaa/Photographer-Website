@@ -34,7 +34,7 @@ export const images = [
   {
     src: "isa100.webp",
     alt: "Hero img",
-    objectPositionClass: "object-[center_35%]",
+    objectPositionClass: "object-[center_40%]",
   },
   {
     src: "agnesa_5.webp",
@@ -182,22 +182,20 @@ const Home = () => {
   return (
     <div>
       <FullWidth>
-        <div className="relative w-full max-h-[800px] h-[800px] overflow-hidden">
+        <div className="relative md:w-full md:min-h-[900px]  h-full min-h-[500px] mt-12 md:mt-0 mb-16 md:mb-0 overflow-hidden">
           {images.map((photo, index) => (
-            <img
-              src={photo.src}
-              loading="lazy"
+            <div
               key={index}
-              sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
-              alt={photo.alt}
-              // transition-opacity duration-1000 ease-in-out
-              //
-              className={`absolute inset-0 w-full object-contain md:object-cover ${
-                photo.objectPositionClass
-              } h-full  ${
+              className={`absolute inset-0 w-full h-full rounded-2xl overflow-hidden ${
                 index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
-            />
+            >
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                className={`w-full h-full object-cover ${photo.objectPositionClass}`}
+              />
+            </div>
           ))}
         </div>
       </FullWidth>
