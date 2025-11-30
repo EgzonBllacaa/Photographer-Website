@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ImageModal from "./ImageModal";
-import { images } from "../pages/Home";
+import { images2 } from "../pages/Home";
 
 const PhotoGallery = () => {
   const [selected, setSelected] = useState<null | string>(null);
@@ -14,7 +14,7 @@ const PhotoGallery = () => {
     <>
       {/* Gallery container */}
       <div className="max-w-6xl mx-auto columns-1 sm:columns-2 md:columns-3  gap-4 p-4">
-        {images.map((photo, i) => (
+        {images2.map((photo, i) => (
           <div
             key={i}
             className="relative mb-4 break-inside-avoid cursor-pointer"
