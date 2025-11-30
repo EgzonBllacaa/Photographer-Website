@@ -3,9 +3,6 @@ import { useEffect, useState } from "react";
 import ImageModal from "../components/ImageModal";
 // import {images} from "../pages/Home"
 
-
-
-
 // const sections = [
 //   {
 //     imgSrc: "/IMG_6.webp",
@@ -93,7 +90,7 @@ export const sections = [
   { imgSrc: "Photo_18.webp", title: "", tagName: "Weddings" },
   { imgSrc: "Photo_19.webp", title: "", tagName: "Portraits" },
   { imgSrc: "Photo_20.webp", title: "", tagName: "Weddings" },
-  { imgSrc: "Photo_21.webp", title: "", tagName: "Portraits" },
+  // { imgSrc: "horizontal_3.webp", title: "", tagName: "Portraits" },
   { imgSrc: "Photo_22.webp", title: "", tagName: "Weddings" },
   { imgSrc: "Photo_23.webp", title: "", tagName: "Portraits" },
   { imgSrc: "Photo_24.webp", title: "", tagName: "Weddings" },
@@ -121,7 +118,6 @@ export const sections = [
   { imgSrc: "Snap_19.jpg", title: "", tagName: "Weddings" },
   { imgSrc: "Snap_20.jpg", title: "", tagName: "Portraits" },
 ];
-
 
 const Portfolio = () => {
   const [selectedTag, setSelectedTag] = useState("Everything");
@@ -172,7 +168,7 @@ const Portfolio = () => {
               <h3 className="text-md mt-2">{section.title}</h3>
               <p className="text-zinc-500 text-sm">{section.tagName}</p>
             </div>
-            </>
+          </>
           // </FadeIn>
         ))}
         {selected && (

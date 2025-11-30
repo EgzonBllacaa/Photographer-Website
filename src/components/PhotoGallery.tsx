@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 // import FadeIn from "./FadeIn";
 import ImageModal from "./ImageModal";
-import {images} from "../pages/Home"
+import { images } from "../pages/Home";
 
 // const photos = [
 //   {
@@ -21,7 +21,7 @@ import {images} from "../pages/Home"
 //     alt: "Hero img",
 //   },
 //   {
-//     src: "/shoqnia.webp",
+//     src: "/horizontal_1.webp",
 //     alt: "Hero img",
 //   },
 //   {
@@ -53,7 +53,7 @@ const PhotoGallery = () => {
   useEffect(() => {
     document.body.style.overflow = scrollDisabled ? "hidden" : "auto";
   }, [scrollDisabled]);
-  
+
   return (
     <>
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4  p-4 ">
@@ -71,7 +71,6 @@ const PhotoGallery = () => {
               loading="lazy"
               sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
               src={photo.src}
-              
             />
           </div>
         ))}
