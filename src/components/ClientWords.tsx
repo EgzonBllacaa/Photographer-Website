@@ -79,7 +79,7 @@ const ClientWords = () => {
             {section.content3 && (
               <p className="leading-loose ">{section.content3}</p>
             )}
-            <p className="capitalize">{section.names}</p>
+            {/* <p className="capitalize">{section.names}</p> */}
           </div>
           <button
             onClick={handleNext}
