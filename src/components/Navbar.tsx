@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { BsTiktok } from "react-icons/bs";
 import { FiInstagram, FiLinkedin } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { SiGmail } from "react-icons/si";
 import { Link } from "react-router";
 
 const Navbar = () => {
