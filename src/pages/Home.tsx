@@ -174,7 +174,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 2500); // 3000ms = 3 seconds
+    }, 1500); // 3000ms = 3 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -186,7 +186,7 @@ const Home = () => {
           {images.map((photo, index) => (
             <div
               key={index}
-              className={`absolute inset-0 w-full h-full rounded-2xl overflow-hidden ${
+              className={`absolute inset-0 w-full h-full rounded-2xl md:rounded-none transition-opacity duration-1000 ease-in-out overflow-hidden ${
                 index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             >

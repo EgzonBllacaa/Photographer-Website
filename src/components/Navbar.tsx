@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { BsTiktok } from "react-icons/bs";
 import { FiInstagram, FiLinkedin } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { SiGmail } from "react-icons/si";
@@ -119,7 +120,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <SiGmail width={28} height={28} />
+              <BsTiktok />
             </a>
           </div>
         </ul>
@@ -191,14 +192,12 @@ const Navbar = () => {
           >
             <FiLinkedin width={34} height={34} />
           </Link>
-          <a
-            href="mailto:riardbllaca9@gmail.com"
+          <Link
             className="px-5"
-            target="_blank"
-            rel="noopener noreferrer"
+            to={"https://www.tiktok.com/@riardbllaca.photographer"}
           >
-            <SiGmail width={34} height={34} />
-          </a>
+            <BsTiktok />
+          </Link>
         </div>
       </nav>
     </header>
