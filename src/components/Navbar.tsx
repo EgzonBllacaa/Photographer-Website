@@ -20,32 +20,34 @@ const Navbar = () => {
 
   return (
     <header
-      className={`px-12 bg-white pt-20 top-0 transition-all duration-300 fixed left-0 z-50 pb-5 w-full ${
+      className={`px-12  pt-20 top-0 transition-all duration-300 fixed left-0 z-50 pb-5 w-full ${
         isScrolled
-          ? "md:bg-white/80 md:backdrop-blur-sm md:shadow-md"
-          : "md:bg-transparent"
+          ? "md:bg-black text-white md:backdrop-blur-sm md:shadow-md"
+          : "md:bg-transparent text-black"
       }`}
     >
       {/* flex justify-between items-center */}
       {/* grid place-items-center grid-cols-3  */}
-      <nav className=" flex items-center justify-between">
+      <nav className=" flex items-center justify-between z-50">
         {/* Hamburger icon */}
         <button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="text-2xl z-50 cursor-pointer lg:hidden"
+          className={`text-2xl z-50 cursor-pointer ${
+            isOpen ? "text-[#fff59e]" : "text-[#777035]"
+          }   lg:hidden`}
         >
           <GiHamburgerMenu />
         </button>
 
         {/* ====== Mobile Full-Screen Menu ====== */}
         <ul
-          className={`fixed top-0 left-0 w-full h-full bg-white  flex flex-col items-center justify-center gap-8 text-lg transform transition-transform duration-300 ease-in-out lg:hidden z-40 ${
+          className={`fixed top-0 left-0 w-full h-full bg-black text-white  flex flex-col items-center justify-center gap-8 text-lg transform transition-transform duration-300 ease-in-out lg:hidden z-40 ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           <li>
             <Link
-              className="p-3 uppercase hover:border-b-2 hover:border-amber-800 hover:text-amber-800"
+              className="p-3 uppercase hover:border-b-2 hover:border-[#777035] hover:text-[#777035]"
               to={"/portfolio"}
               onClick={() => setIsOpen(false)}
             >
@@ -54,7 +56,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="p-3 uppercase hover:border-b-2 hover:border-amber-800 hover:text-amber-800"
+              className="p-3 uppercase hover:border-b-2 hover:border-[#777035] hover:text-[#777035]"
               to={"/contact"}
               onClick={() => setIsOpen(false)}
             >
@@ -63,7 +65,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="block uppercase px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800"
+              className="block uppercase px-4 py-2 hover:border-[#777035] hover:text-[#777035]"
               to={"/investment"}
               onClick={() => {
                 setIsOpen(false);
@@ -84,7 +86,7 @@ const Navbar = () => {
             {isInfoOpen && (
               <div className="mt-2 w-64 uppercase text-zinc-500 bg-white py-4 text-center rounded-lg shadow-lg transition-all duration-200">
                 <Link
-                  className="block px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800"
+                  className="block px-4 py-2  hover:border-b hover:border-[#777035] hover:text-[#777035]"
                   to={"/about"}
                   onClick={() => {
                     setIsOpen(false);
@@ -101,19 +103,19 @@ const Navbar = () => {
           <div className="flex justify-center items-center gap-4 mt-8">
             <Link
               to={"https://www.instagram.com/riardbllaca.photography/?hl=en"}
-              className="p-2"
+              className="p-2 hover:text-[#777035]"
             >
               <FiInstagram width={28} height={28} />
             </Link>
             <Link
               to={"https://www.linkedin.com/in/riard-bllaca-514b7918a/"}
-              className="p-2"
+              className="p-2 hover:text-[#777035]"
             >
               <FiLinkedin width={28} height={28} />
             </Link>
             <a
               href="mailto:riardbllaca9@gmail.com"
-              className="p-2"
+              className="p-2 hover:text-[#777035]"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -126,7 +128,7 @@ const Navbar = () => {
         <ul className="lg:flex flex-1 items-center hidden text-sm">
           <li>
             <Link
-              className="p-5 uppercase hover:border-b-2 hover:text-amber-800"
+              className="p-5 uppercase hover:border-b-2 hover:text-[#777035]"
               to={"/portfolio"}
             >
               Portfolio
@@ -134,7 +136,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="p-5 uppercase hover:border-b-2 hover:border-amber-800 hover:text-amber-800"
+              className="p-5 uppercase hover:border-b-2 hover:text-[#777035] hover:border-[#777035]"
               to={"/contact"}
             >
               Contact
@@ -142,14 +144,16 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="p-5 uppercase  hover:text-amber-800 hover:border-b border-amber-800 "
+              className="p-5 uppercase  hover:border-b hover:text-[#777035] hover:border-[#777035 "
               to={"/investment"}
             >
               Pricing
             </Link>
           </li>
           <li className="relative group">
-            <span className="p-5 uppercase cursor-pointer">Info</span>
+            <span className="p-5 uppercase cursor-pointer hover:text-amber-800/70">
+              Info
+            </span>
             <div className="absolute left-0 w-70 uppercase text-zinc-500 bg-white py-4 text-center rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <Link
                 className="px-4 py-2 hover:text-amber-800 hover:border-b border-amber-800 block"
@@ -163,7 +167,14 @@ const Navbar = () => {
 
         {/* Center logo */}
         <span className="lg:text-4xl sm:text-3xl text-lg  flex flex-1 sm:text-nowrap text-center justify-center font-serif">
-          <Link to={"/"}>Riard Bllaca Photography</Link>
+          <Link
+            to={"/"}
+            className={`font-light ${
+              isScrolled ? " text-white " : " text-black "
+            }`}
+          >
+            Riard Bllaca Photography
+          </Link>
         </span>
 
         {/* Desktop icons */}

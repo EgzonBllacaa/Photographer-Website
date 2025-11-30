@@ -7,10 +7,10 @@ const Contact = () => {
     <div>
       <FullWidth>
         <img
-          src="/IMG_5.webp"
+          src="/Riard_self_image.jpeg"
           loading="lazy"
           sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
-          className="min-h-[400px] max-h-[800px] w-full object-cover"
+          className="w-full h-full mt-32 md:min-h-[400px] md:max-h-[800px] md:w-full object-cover"
           alt=""
         />
       </FullWidth>

@@ -3,25 +3,54 @@ import FadeIn from "./FadeIn";
 
 const sections = [
   {
-    title: "Portraits",
-    content: "WA/OR starting at $1,500 Destination starting at $098989",
-    cta: "Get in Touch",
-    imgSrc: "/medina.webp",
+    title: "Basic | 399€",
+    contentTitle: "Ideal për çiftet që duan diçka të thjeshtë dhe të bukur.",
+    content: [
+      "Fotosesion para dasmës (1:30h)",
+      "300–500 foto",
+      "30 foto të edituara profesionalisht",
+      "1 video e shkurtër “Love Story” (20–40 sekonda)",
+      "Location brenda Kosovës",
+      "Fotot dorëzohen online",
+    ],
+    cta: "Book now",
+    imgSrc: "/Photo_6.webp",
   },
   {
-    title: "Weddings",
-    content: "WA/OR starting at $7,500 Destination starting at $8,500",
-    cta: "Get in Touch",
-    imgSrc: "/marigona2.webp",
+    title: "Standard | 599€",
+    contentTitle: "Opsion i balancuar për çiftet që duan më shumë detaje.",
+    content: [
+      "Fotosesion para dasmës",
+      "1 fotograf në dasmë",
+      "500–800 foto totale ne fotosesion",
+      "Të gjitha fotot me color correction",
+      "50 foto të edituara profesionalisht",
+      "1 video Love Story (30–60 sekonda)",
+      "Dorëzimi: USB + online",
+      "Location brenda Kosovës",
+    ],
+    cta: "Book now",
+    imgSrc: "/Snap_4.jpg",
   },
   {
-    title: "Elopements",
-    content: "WA/OR starting at $5,750 Destination starting at $6,750",
-    cta: "Get in Touch",
+    title: "Premium | 799€",
+    contentTitle:
+      "Për çiftet që duan mbulim të fortë dhe dy këndvështrime në dasmë.",
+    content: [
+      "Për çiftet që duan mbulim të fortë dhe dy këndvështrime në dasmë.",
+      "Fotosesion para dasmës",
+      "2 fotografë ditën e dasmës",
+      "700–1000 foto ne fotosesion",
+      "Të gjitha fotot me color correction",
+      "70 foto të edituara profesionalisht",
+      "1 video Love Story (30–60 sekonda)",
+      "Dorëzimi: USB + online",
+      "Location brenda Kosovës",
+    ],
+    cta: "Book now",
     imgSrc: "/marigona.webp",
   },
 ];
-
 const PricingSection = () => {
   return (
     <div className="mb-30">
@@ -33,14 +62,22 @@ const PricingSection = () => {
             }`}
             key={index}
           >
-            <div className="sm:w-1/2 w-full flex flex-col gap-6 px-32 py-20 items-center">
-              <h3 className="text-3xl uppercase tracking-wider">
+            <div className="sm:w-1/2 w-full flex flex-col gap-6  md:px-32 py-20 items-center">
+              <h3 className="text-3xl uppercase tracking-wider font-medium">
                 {section.title}
               </h3>
-              <p className="text-sm text-zinc-500 tracking-wide text-center ">
-                {section.content}
-              </p>
-              <Link className="text-orange-800/40" to={"/contact"}>
+              <div className="text-sm flex flex-col gap-5 text-zinc-500  text-center ">
+                <span className=" text-black ">{section.contentTitle}</span>
+                <ul>
+                  {section.content.map((item, idx) => (
+                    <>
+                      <li key={idx}>{item}</li>
+                      <br />
+                    </>
+                  ))}
+                </ul>
+              </div>
+              <Link className="text-orange-800/90 " to={"/contact"}>
                 {section.cta}
               </Link>
             </div>

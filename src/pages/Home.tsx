@@ -3,46 +3,46 @@ import CoverLetter from "../components/CoverLetter";
 import FullWidth from "../components/FullWidth";
 import PhotoGallery from "../components/PhotoGallery";
 
+// { src: "/medina.webp", alt: "Hero img" },
+// { src: "horizontal_2.webp", alt: "Hero img" },
 export const images = [
-  // { src: "/medina.webp", alt: "Hero img",  },
-  // { src: "horizontal_2.webp", alt: "Hero img" },
-  // {
-  //   src: "qlirimi 1.webp",
-  //   alt: "Hero img",
-  //   objectPositionClass: "object-[center_60%]",
-  // },
-  // {
-  //   src: "DJI_0771-Enhanced-NR.webp",
-  //   alt: "Hero img",
-  //   objectPositionClass: "object-[center_50%]",
-  // },
-  // {
-  //   src: "DJI_0773.webp",
-  //   alt: "Hero img",
-  //   objectPositionClass: "object-[center_50%]",
-  // },
-  // {
-  //   src: "/marigona.webp",
-  //   alt: "Hero img",
-  //   objectPositionClass: "object-[center_30%]",
-  // },
-  // {
-  //   src: "marigona2.webp",
-  //   alt: "Hero img",
-  //   objectPositionClass: "object-[center_20%]",
-  // },
-  // {
-  //   src: "Snap_4.jpg",
-  //   alt: "Hero img",
-  //   objectPositionClass: "object-[center_20%]",
-  // },
-  // {
-  //   src: "DSC07917-Enhanced-NR.webp",
-  //   alt: "Hero img",
-  //   objectPositionClass: "object-[center_20%]",
-  // },
   {
-    src: "DSC07770-Enhanced-NR.webp",
+    src: "qlirimi 1.webp",
+    alt: "Hero img",
+    objectPositionClass: "object-[center_60%]",
+  },
+  {
+    src: "DJI_0771-Enhanced-NR.webp",
+    alt: "Hero img",
+    objectPositionClass: "object-[center_50%]",
+  },
+  {
+    src: "DJI_0773.webp",
+    alt: "Hero img",
+    objectPositionClass: "object-[center_50%]",
+  },
+  {
+    src: "/marigona.webp",
+    alt: "Hero img",
+    objectPositionClass: "object-[center_30%]",
+  },
+  {
+    src: "marigona2.webp",
+    alt: "Hero img",
+    objectPositionClass: "object-[center_20%]",
+  },
+  {
+    src: "Snap_4.jpg",
+    alt: "Hero img",
+    objectPositionClass: "object-[center_20%]",
+  },
+  {
+    src: "agnesa_2.webp",
+    alt: "Hero img",
+    objectPositionClass: "object-[center_20%]",
+  },
+  {
+    src: "agnesa_5.webp",
     alt: "Hero img",
     objectPositionClass: "object-[center_50%]",
   },
@@ -58,14 +58,14 @@ export const images = [
   // { src: "Snap_19.jpg", alt: "Hero img" },
   // { src: "Snap_20.jpg", alt: "Hero img" },
   // { src: "DJI_0790.webp", alt: "Hero img" },
-  // { src: "DSC02570.webp", alt: "Hero img" },
+  // { src: "DSC02570.webp", alt: "Hero img" },`
   // { src: "DSC02586.webp", alt: "Hero img" },
   // { src: "DSC02593.webp", alt: "Hero img" },
   // { src: "DSC03003.webp", alt: "Hero img" },
   // { src: "DSC07200.webp", alt: "Hero img" },
-  // { src: "DSC07751-Enhanced-NR.webp", alt: "Hero img" },
-  // { src: "DSC07800-Enhanced-NR.webp", alt: "Hero img" },
-  // { src: "DSC07852.webp", alt: "Hero img" },
+  // { src: "agnesa_6.webp", alt: "Hero img" },
+  // { src: "agnesa_4.webp", alt: "Hero img" },
+  // { src: "agnesa_3.webp", alt: "Hero img" },
   // { src: "DSC07992.webp", alt: "Hero img" },
   // { src: "Photo_1.webp", alt: "Hero img" },
   // { src: "Photo_2.webp", alt: "Hero img" },

@@ -22,33 +22,33 @@ const CoverLetter = ({
 }: Props) => {
   return (
     <FadeIn amount={0.2}>
-      <section className="md:px-32  px-2 md:py-28 py-10 my-10 relative flex flex-col justify-center z-20 md:-mt-7 -mt-12 bg-white mx-auto md:max-w-3xl max-w-xl gap-3.5 items-center ">
+      <section className="md:px-32  px-2 md:py-28 py-10 my-10 relative flex flex-col justify-center text-black z-20 md:-mt-7 -mt-12 bg-[#777035] mx-auto md:max-w-3xl max-w-xl gap-3.5 items-center ">
         <h2 className="uppercase text-xl font-light text-center">{heading}</h2>
-        <p className="text-center text-md leading-loose text-zinc-500">
+        <p className="text-center text-md leading-loose text-white">
           {content}
         </p>
         {captureText && (
-          <p className="text-2xl px-4 leading-8 text-orange-800/60 py-10 text-center">
+          <p className="text-2xl px-4 leading-8 text-white py-10 text-center">
             {captureText}
           </p>
         )}
         {content2 && (
-          <p className="text-center text-md leading-loose text-zinc-500 ">
+          <p className="text-center text-md leading-loose text-white ">
             {content2}
           </p>
         )}
         {content3 && (
-          <p className="text-center text-md leading-loose text-zinc-500 ">
+          <p className="text-center text-md leading-loose text-white ">
             {content3}
           </p>
         )}
         {linkTo && (
           <Link
             to={`/${linkTo}`}
-            className={`${
+            className={` text-white ${
               linkToText === "More about Riard"
-                ? "text-amber-800/70 text-sm underline"
-                : "px-12 py-6 bg-orange-900/60 tracking-wider text-white uppercase mt-10"
+                ? "text-sm underline"
+                : "px-12 py-6 tracking-wider  uppercase mt-10"
             } `}
           >
             {linkToText || "Learn More"}
