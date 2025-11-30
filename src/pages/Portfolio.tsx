@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 // import FadeIn from "../components/FadeIn";
 import ImageModal from "../components/ImageModal";
-import { GiCardKingClubs } from "react-icons/gi";
+// import { GiCardKingClubs } from "react-icons/gi";
 
 export const sections = [
   {
