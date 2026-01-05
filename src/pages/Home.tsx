@@ -204,8 +204,7 @@ const Home = () => {
         heading="Human Connection is a beautiful thing"
         content="And is at the heart of my photography. I’m drawn to the authentic,
         subtle moments that often go unnoticed—the quiet glances, gentle
-        touches, and soft smiles that weave together the story of your wedding
-        day. My goal is to capture these fleeting, genuine interactions,
+        touches, and soft smiles that weave together the story of your special day. My goal is to capture these fleeting, genuine interactions,
         preserving the emotions and connections that make your day uniquely
         yours."
         linkTo="about"

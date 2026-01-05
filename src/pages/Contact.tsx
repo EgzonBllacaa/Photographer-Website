@@ -16,7 +16,7 @@ const Contact = () => {
       </FullWidth>
       <CoverLetter
         heading="I can’t wait to hear from you!"
-        content="Nëse dëshironi të mësoni më shumë rreth punës sime, ju lutem përdorni formularin më poshtë për të më kontaktuar."
+        content="Nëse ju pëlqeu puna ime dhe dëshironi të bashkëpunojmë, ju ftoj të plotësoni formularin më poshtë për të më kontaktuar."
       />
       <ContactForm />
     </div>

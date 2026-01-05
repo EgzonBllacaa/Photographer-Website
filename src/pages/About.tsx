@@ -16,14 +16,16 @@ const About = () => {
       <FadeIn>
         <div className="flex flex-col gap-3 items-center text-center text-zinc-600 leading-loose">
           <p>
-            I’m Riard Bllaca, a professional photographer based in Prishtina with over 10 years of experience. Throughout my career, I have worked on a wide range of projects, from weddings
-            and portraits to commercial photography. My approach combines technical expertise and a keen eye for detail, ensuring every image meets the highest standards.
+            I’m Riard Bllaca, a professional photographer based in Prishtina
+            with over a decade of experience capturing compelling visual
+            stories. My work spans a diverse range of projects, from weddings
+            and portraits to commercial photography, each approached with
+            creativity, precision, and purpose.
           </p>
           <p>
-            Riard Bllaca here, a professional photographer from Prishtina with more than a decade of experience. I specialize in
-            capturing authentic moments and creating visually
-            striking images for weddings, portraits, and commercial work. With over 10 years behind the camera, I focus on precision, creativity,
-            and consistently delivering exceptional results.
+            By blending technical mastery with a sharp eye for detail, I deliver
+            images that are not only visually striking but crafted to the
+            highest professional standards.
           </p>
         </div>
       </FadeIn>
