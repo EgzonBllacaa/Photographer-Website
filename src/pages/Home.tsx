@@ -159,13 +159,13 @@ export const images2 = [
   { src: "Snap_4.jpg", alt: "Hero img" },
   { src: "Snap_5.jpg", alt: "Hero img" },
   { src: "Snap_6.jpg", alt: "Hero img" },
-  { src: "Snap_11.webp", alt: "Hero img" },
-  { src: "Snap_12.webp", alt: "Hero img" },
-  { src: "Snap_15.webp", alt: "Hero img" },
-  { src: "Snap_16.webp", alt: "Hero img" },
-  { src: "Snap_17.webp", alt: "Hero img" },
-  { src: "Snap_19.webp", alt: "Hero img" },
-  { src: "Snap_20.webp", alt: "Hero img" },
+  // { src: "Snap_11.webp", alt: "Hero img" },
+  // { src: "Snap_12.webp", alt: "Hero img" },
+  // { src: "Snap_15.webp", alt: "Hero img" },
+  // { src: "Snap_16.webp", alt: "Hero img" },
+  // { src: "Snap_17.webp", alt: "Hero img" },
+  // { src: "Snap_19.webp", alt: "Hero img" },
+  // { src: "Snap_20.webp", alt: "Hero img" },
 ];
 
 const Home = () => {
