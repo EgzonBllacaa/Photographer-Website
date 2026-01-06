@@ -1,0 +1,59 @@
+{
+  "coverLetter": {
+    "heading": "Human Connection is a beautiful thing",
+    "content": "And is at the heart of my photography. I’m drawn to the authentic, subtle moments that often go unnoticed—the quiet glances, gentle touches, and soft smiles that weave together the story of your special day. My goal is to capture these fleeting, genuine interactions, preserving the emotions and connections that make your day uniquely yours.",
+    "linkText": "More about Riard"
+  },
+  "images": {
+    "heroAlt": "Hero img"
+  },
+  "contact": {
+    "heading": "I can’t wait to hear from you!",
+    "content": "If you liked my work and want to collaborate, please fill out the form below to get in touch."
+  },
+
+  "contactForm": {
+    "firstName": "First Name:*",
+    "lastName": "Last Name:*",
+    "email": "Email:*",
+    "phone": "Phone:*",
+    "interestedIn": "We're interested in...",
+    "interestedOptions": {
+      "wedding": "Wedding",
+      "engagement": "Engagement",
+      "anniversary": "Anniversary",
+      "commercial": "Commercial"
+    },
+    "eventDate": "When is your ideal event date?*",
+    "eventLocation": "Where will your event be located?",
+    "eventLocationPlaceholder": "City & State",
+    "submitButton": "Submit",
+    "errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Email is required",
+      "emailInvalid": "Email provided is not a real one",
+      "phoneRequired": "Phone number should be filled",
+      "phoneShort": "Phone number is too short",
+      "eventLocation": "Event location is required"
+    }
+  },
+
+  "investment": {
+    "coverLetter": {
+      "content": "I have had the honor of being part of many weddings over a decade or more. Experience has taught me that photography is not just location, light, or composition — it’s the feeling captured in a moment. I photograph relationships, small gestures, and those sincere moments that make every wedding unique.",
+      "captureText": "It’s about capturing the intricacies of the relationships that make every wedding unique.",
+      "content2": "My goal is that when you look at the photos, you relive the same joy, nostalgia, or smile you had that day. It’s not about 'perfect photography' but about the story behind it — the story of family, friends, and moments that show love and human connection.",
+      "content3": "If through my photos you relive the feelings of that day, if you smile recalling a beautiful moment with friends, or get lost in a detail you didn’t notice — then I have done my job. And if on the hardest days these photos bring you a little light, that is the greatest honor I can have as a photographer.",
+      "linkToText": "Let's Get Started"
+    }
+  },
+
+  "about": {
+    "intro": [
+      "I’m Riard Bllaca, a professional photographer based in Prishtina with over a decade of experience capturing compelling visual stories. My work spans a diverse range of projects, from weddings and portraits to commercial photography, each approached with creativity, precision, and purpose.",
+      "By blending technical mastery with a sharp eye for detail, I deliver images that are not only visually striking but crafted to the highest professional standards."
+    ],
+    "buttonText": "Get in Touch"
+  }
+}

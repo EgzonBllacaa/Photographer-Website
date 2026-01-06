@@ -1,11 +1,13 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
-  import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
 import * as EmailValidator from "email-validator";
 import FadeIn from "./FadeIn";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -27,23 +29,23 @@ const ContactForm = () => {
     const newErrors: { [key: string]: string } = {};
 
     if (formData.firstName.trim() === "")
-      newErrors.firstName = "First name is required";
-    if (formData.email.trim() === "") newErrors.email = "Email is required";
+      newErrors.firstName = t("contactForm.errors.firstName");
     if (formData.lastName.trim() === "")
-      newErrors.lastName = "Last name is required";
-    if (!formData.phone && formData.phone.trim() === "") {
-      newErrors.phone = "Phone number should be filled";
-    } else if (formData.phone.length <= 8) {
-      newErrors.phone = "Phone number is too short";
-    }
+      newErrors.lastName = t("contactForm.errors.lastName");
+    if (formData.email.trim() === "")
+      newErrors.email = t("contactForm.errors.email");
+    else if (!EmailValidator.validate(formData.email))
+      newErrors.email = t("contactForm.errors.emailInvalid");
+
+    if (!formData.phone || formData.phone.trim() === "")
+      newErrors.phone = t("contactForm.errors.phoneRequired");
+    else if (formData.phone.length <= 8)
+      newErrors.phone = t("contactForm.errors.phoneShort");
 
     if (formData.eventLocation.trim() === "")
-      newErrors.eventLocation = "Event location is required";
-    if (!EmailValidator.validate(formData.email)) {
-      newErrors.email = "Email provided is not a real one";
-    }
-    setError(newErrors);
+      newErrors.eventLocation = t("contactForm.errors.eventLocation");
 
+    setError(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
@@ -59,29 +61,24 @@ const ContactForm = () => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
-        (response) => {
-          console.log(
-            "Email sent successfully!",
-            response.status,
-            response.text
-          );
-          alert("Message sent successfully!");
+        () => {
+          alert(t("contactForm.submitSuccess") || "Message sent successfully!");
           setFormData({
             firstName: "",
             lastName: "",
             email: "",
             phone: "",
-            interestedIn: "",
+            interestedIn: "wedding",
             eventDate: "",
             eventLocation: "",
           });
         },
-        (error) => {
-          console.error("Failed to send email.", error);
-          alert("Failed to send message.");
+        () => {
+          alert(t("contactForm.submitError") || "Failed to send message.");
         }
       );
   };
+
   return (
     <form
       onSubmit={handleSubmit}
@@ -90,9 +87,9 @@ const ContactForm = () => {
       <FadeIn>
         <div className="flex flex-col sm:flex-row gap-5 w-full items-center">
           <div className="flex flex-col w-full">
-            <label htmlFor="">First Name:*</label>
+            <label>{t("contactForm.firstName")}</label>
             <input
-              className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
+              className="border-b outline-none py-3 px-1 hover:border-b-amber-800 focus:bg-amber-800/10"
               type="text"
               name="firstName"
               value={formData.firstName}
@@ -103,9 +100,9 @@ const ContactForm = () => {
             )}
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="">Last Name:*</label>
+            <label>{t("contactForm.lastName")}</label>
             <input
-              className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
+              className="border-b outline-none py-3 px-1 hover:border-b-amber-800 focus:bg-amber-800/10"
               type="text"
               name="lastName"
               value={formData.lastName}
@@ -117,11 +114,12 @@ const ContactForm = () => {
           </div>
         </div>
       </FadeIn>
+
       <FadeIn>
         <div className="flex flex-col w-full">
-          <label htmlFor="">Email:*</label>
+          <label>{t("contactForm.email")}</label>
           <input
-            className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
+            className="border-b outline-none py-3 px-1 hover:border-b-amber-800 focus:bg-amber-800/10"
             type="text"
             name="email"
             value={formData.email}
@@ -130,12 +128,12 @@ const ContactForm = () => {
           {error.email && <span className="text-red-700">{error.email}</span>}
         </div>
       </FadeIn>
+
       <FadeIn>
-        {" "}
         <div className="flex flex-col w-full">
-          <label htmlFor="">Phone:*</label>
+          <label>{t("contactForm.phone")}</label>
           <input
-            className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
+            className="border-b outline-none py-3 px-1 hover:border-b-amber-800 focus:bg-amber-800/10"
             type="number"
             name="phone"
             value={formData.phone}
@@ -144,36 +142,47 @@ const ContactForm = () => {
           {error.phone && <span className="text-red-700">{error.phone}</span>}
         </div>
       </FadeIn>
+
       <FadeIn>
         <div className="flex flex-col w-full">
-          <label htmlFor="">We're interested in...</label>
+          <label>{t("contactForm.interestedIn")}</label>
           <select
             name="interestedIn"
             value={formData.interestedIn}
             onChange={handleOnChange}
             className="border-b outline-none py-3 px-1 hover:border-b-amber-800 focus:bg-amber-800/10"
           >
-            <option value="wedding">Wedding</option>
-            <option value="engagement">Engagement</option>
-            <option value="anniversary">Anniversary</option>
-            <option value="commercial">Commercial</option>
+            <option value="wedding">
+              {t("contactForm.interestedOptions.wedding")}
+            </option>
+            <option value="engagement">
+              {t("contactForm.interestedOptions.engagement")}
+            </option>
+            <option value="anniversary">
+              {t("contactForm.interestedOptions.anniversary")}
+            </option>
+            <option value="commercial">
+              {t("contactForm.interestedOptions.commercial")}
+            </option>
           </select>
         </div>
       </FadeIn>
+
       <FadeIn>
-        <div className="flex flex-col  w-full">
-          <label htmlFor="">When is your ideal event date?*</label>
+        <div className="flex flex-col w-full">
+          <label>{t("contactForm.eventDate")}</label>
           <DatePicker
             selected={formData.eventDate ? new Date(formData.eventDate) : null}
             onChange={(date: Date | null) => {
-              if (date) {
+              if (date)
                 setFormData({
                   ...formData,
-                  eventDate: date.toISOString().split("T")[0], // saves as yyyy-mm-dd
+                  eventDate: date.toISOString().split("T")[0],
                 });
-              }
             }}
-            placeholderText="Select date"
+            placeholderText={
+              t("contactForm.eventDatePlaceholder") || "Select date"
+            }
             dateFormat="dd/MM/yyyy"
             className="border-b outline-none py-3 px-1 hover:border-b-amber-800 focus:bg-amber-800/10 w-full"
             minDate={new Date()}
@@ -181,14 +190,14 @@ const ContactForm = () => {
           />
         </div>
       </FadeIn>
+
       <FadeIn>
-        {" "}
         <div className="flex flex-col w-full">
-          <label htmlFor="">Where will your event be located?</label>
+          <label>{t("contactForm.eventLocation")}</label>
           <input
-            className="border-b outline-none py-3 px-1  hover:border-b-amber-800 focus:bg-amber-800/10"
+            className="border-b outline-none py-3 px-1 hover:border-b-amber-800 focus:bg-amber-800/10"
             type="text"
-            placeholder="City & State"
+            placeholder={t("contactForm.eventLocationPlaceholder")}
             name="eventLocation"
             value={formData.eventLocation}
             onChange={handleOnChange}
@@ -198,11 +207,12 @@ const ContactForm = () => {
           )}
         </div>
       </FadeIn>
+
       <button
         type="submit"
         className="px-10 py-3 text-center mx-auto bg-amber-800 text-white w-fit"
       >
-        Submit
+        {t("contactForm.submitButton")}
       </button>
     </form>
   );

@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import ContactForm from "../components/ContactForm";
 import CoverLetter from "../components/CoverLetter";
 import FullWidth from "../components/FullWidth";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <FullWidth>
@@ -15,8 +17,8 @@ const Contact = () => {
         />
       </FullWidth>
       <CoverLetter
-        heading="I can’t wait to hear from you!"
-        content="Nëse ju pëlqeu puna ime dhe dëshironi të bashkëpunojmë, ju ftoj të plotësoni formularin më poshtë për të më kontaktuar."
+        heading={t("contact.heading")}
+        content={t("contact.content")}
       />
       <ContactForm />
     </div>

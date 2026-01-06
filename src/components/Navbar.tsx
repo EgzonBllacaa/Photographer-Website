@@ -1,13 +1,21 @@
+import i18next from "i18next";
 import { useEffect, useState } from "react";
+// import { useTranslation } from "react-i18next";
 import { BsTiktok } from "react-icons/bs";
 import { FiInstagram, FiLinkedin } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
   const [isInfoOpen, setIsInfoOpen] = useState(false);
+  // const { t } = useTranslation();
+  const [isLangShown, setIsLangShown] = useState(false);
+
+  const portfolioPage = location.pathname === "/portfolio";
+  console.log("Location", location.pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -176,6 +184,59 @@ const Navbar = () => {
             Riard Bllaca Photography
           </Link>
         </span>
+        {!portfolioPage && (
+          <div className="flex  gap-4 justify-center items-center z-70  mb-4 text-black">
+            <button
+              className={`bg-white px-5 py-2 rounded-2xl  `}
+              onClick={() => setIsLangShown((prev) => !prev)}
+            >
+              Change Language
+            </button>
+            {isLangShown && (
+              <div className=" w-full flex  gap-2 bg-zinc-50 rounded-xl py-2 max-w-44 ">
+                <div className="flex justify-between mx-auto max-w-22 w-full hover:bg-zinc-200 cursor-pointer ">
+                  <button
+                    onClick={() => i18next.changeLanguage("en")}
+                    className={`mr-2  `}
+                  >
+                    EN{" "}
+                  </button>
+                  <img
+                    src="/england-flag.png"
+                    className="max-w-8 w-full rounded-xl"
+                    alt=""
+                  />
+                </div>
+                <div className="flex justify-between mx-auto max-w-22  w-full hover:bg-zinc-200 cursor-pointer ">
+                  <button
+                    onClick={() => i18next.changeLanguage("de")}
+                    className={`mr-2  `}
+                  >
+                    DE{" "}
+                  </button>
+                  <img
+                    src="/german-flag.png"
+                    className="max-w-8 w-full rounded-xl"
+                    alt=""
+                  />
+                </div>
+                <div className="flex justify-between mx-auto max-w-22  w-full hover:bg-zinc-200 cursor-pointer ">
+                  <button
+                    className={`mr-2 text-black`}
+                    onClick={() => i18next.changeLanguage("sq")}
+                  >
+                    AL
+                  </button>
+                  <img
+                    src="/albania-flag.png"
+                    className="max-w-8 w-full rounded-xl"
+                    alt=""
+                  />
+                </div>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Desktop icons */}
         <div className="lg:flex hidden  flex-1 justify-end items-center ">

@@ -1,0 +1,61 @@
+{
+  "coverLetter": {
+    "heading": "Lidhja njerëzore është një gjë e bukur",
+    "content": "Dhe është në zemër të fotografisë sime. Më tërheqin momentet autentike dhe të buta që shpesh nuk vihen re – shikimet e qeta, prekje të buta dhe buzëqeshje të lehta që ndërtojnë historinë e ditës suaj të veçantë. Qëllimi im është të kap këto ndërveprime të shkurtra dhe të sinqerta, duke ruajtur emocionet dhe lidhjet që e bëjnë ditën tuaj unikale.",
+    "linkText": "Më shumë rreth Riard"
+  },
+  "images": {
+    "heroAlt": "Hero img"
+  },
+  "contact": {
+    "heading": "Mezi pres të dëgjoj nga ti!",
+    "content": "Nëse ju pëlqeu puna ime dhe dëshironi të bashkëpunojmë, ju ftoj të plotësoni formularin më poshtë për të më kontaktuar."
+  },
+  "contactForm": {
+    "firstName": "Emri:*",
+    "lastName": "Mbiemri:*",
+    "email": "Email:*",
+    "phone": "Numri i telefonit:*",
+    "interestedIn": "Jemi të interesuar për...",
+    "interestedOptions": {
+      "wedding": "Dasmë",
+      "engagement": "Fejesë",
+      "anniversary": "Përvjetor",
+      "commercial": "Komercial"
+    },
+    "eventDate": "Kur është data ideale e ngjarjes suaj?*",
+    "eventDatePlaceholder": "Zgjidh datën",
+    "eventLocation": "Ku do të mbahet ngjarja juaj?",
+    "eventLocationPlaceholder": "Qyteti & Shteti",
+    "submitButton": "Dërgo",
+    "errors": {
+      "firstName": "Emri është i detyrueshëm",
+      "lastName": "Mbiemri është i detyrueshëm",
+      "email": "Email është i detyrueshëm",
+      "emailInvalid": "Email-i nuk është i saktë",
+      "phoneRequired": "Numri i telefonit duhet të plotësohet",
+      "phoneShort": "Numri i telefonit është shumë i shkurtër",
+      "eventLocation": "Vendndodhja e ngjarjes është e detyrueshme"
+    },
+    "submitSuccess": "Mesazhi u dërgua me sukses!",
+    "submitError": "Dështoi dërgimi i mesazhit."
+  },
+
+  "investment": {
+    "coverLetter": {
+      "content": "Kam nderin të jem pjesë e shumë dasmave gjatë një dekade e më shumë. Përvoja më ka mësuar se fotografia nuk është thjesht vendi, drita apo kompozicioni — është ndjenja që kapet në një moment. Unë fotografoj marrëdhëniet, gjestet e vogla dhe ato çaste të sinqerta që e bëjnë çdo dasmë të veçantë.",
+      "captureText": "Bëhet fjalë për kapjen e hollësive të marrëdhënieve që e bëjnë çdo dasmë unike.",
+      "content2": "Qëllimi im është që, kur të shikoni fotot, të përjetoni sërish të njëjtin gëzim, mallëngjim apo buzëqeshje që patët atë ditë. Nuk ka të bëjë me 'fotografinë perfekte', por me historinë që qëndron pas saj — historinë e familjes, miqve dhe momenteve që tregojnë dashurinë dhe lidhjen njerëzore.",
+      "content3": "Nëse përmes fotove të mia përjetoni sërish ndjenjat e asaj dite, nëse buzëqeshni duke kujtuar një moment të bukur me miqtë, apo humbisni në një detaj që nuk e keni vënë re — atëherë unë e kam bërë punën time. Dhe nëse në ditët më të vështira këto fotografi ju sjellin pak dritë, ky është nderi më i madh që mund të kem si fotograf.",
+      "linkToText": "Le të fillojmë"
+    }
+  },
+
+  "about": {
+    "intro": [
+      "Jam Riard Bllaca, një fotograf profesionist me bazë në Prishtinë me mbi një dekadë përvojë në kapjen e tregimeve vizuale tërheqëse. Puna ime përfshin një gamë të gjerë projektesh, nga dasmat dhe portretet deri te fotografia komerciale, secila e qasur me kreativitet, saktësi dhe qëllim.",
+      "Duke kombinuar mjeshtërinë teknike me një sy të mprehtë për detajet, ofroj imazhe që jo vetëm janë vizualisht tërheqëse, por janë krijuar sipas standardeve më të larta profesionale."
+    ],
+    "buttonText": "Kontakto"
+  }
+}

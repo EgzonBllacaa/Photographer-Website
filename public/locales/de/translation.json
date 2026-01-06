@@ -1,0 +1,62 @@
+{
+  "coverLetter": {
+    "heading": "Menschliche Verbindung ist etwas Schönes",
+    "content": "Und steht im Mittelpunkt meiner Fotografie. Ich fühle mich zu authentischen, subtilen Momenten hingezogen, die oft unbemerkt bleiben – den stillen Blicken, sanften Berührungen und leichten Lächeln, die zusammen die Geschichte Ihres besonderen Tages erzählen. Mein Ziel ist es, diese flüchtigen, echten Interaktionen einzufangen und die Emotionen und Verbindungen zu bewahren, die Ihren Tag einzigartig machen.",
+    "linkText": "Mehr über Riard"
+  },
+  "images": {
+    "heroAlt": "Hero Bild"
+  },
+  "contact": {
+    "heading": "Ich kann es kaum erwarten, von Ihnen zu hören!",
+    "content": "Wenn Ihnen meine Arbeit gefällt und Sie zusammenarbeiten möchten, füllen Sie bitte das untenstehende Formular aus, um mich zu kontaktieren."
+  },
+
+  "contactForm": {
+    "firstName": "Vorname:*",
+    "lastName": "Nachname:*",
+    "email": "E-Mail:*",
+    "phone": "Telefonnummer:*",
+    "interestedIn": "Wir sind interessiert an...",
+    "interestedOptions": {
+      "wedding": "Hochzeit",
+      "engagement": "Verlobung",
+      "anniversary": "Jahrestag",
+      "commercial": "Werbung/Kommerziell"
+    },
+    "eventDate": "Wann ist Ihr ideales Veranstaltungsdatum?*",
+    "eventDatePlaceholder": "Datum auswählen",
+    "eventLocation": "Wo findet Ihre Veranstaltung statt?",
+    "eventLocationPlaceholder": "Stadt & Bundesland",
+    "submitButton": "Absenden",
+    "errors": {
+      "firstName": "Vorname ist erforderlich",
+      "lastName": "Nachname ist erforderlich",
+      "email": "E-Mail ist erforderlich",
+      "emailInvalid": "Die angegebene E-Mail ist ungültig",
+      "phoneRequired": "Telefonnummer muss ausgefüllt werden",
+      "phoneShort": "Telefonnummer ist zu kurz",
+      "eventLocation": "Veranstaltungsort ist erforderlich"
+    },
+    "submitSuccess": "Nachricht erfolgreich gesendet!",
+    "submitError": "Nachricht konnte nicht gesendet werden."
+  },
+
+  "investment": {
+    "coverLetter": {
+      "content": "Ich hatte die Ehre, im Laufe eines Jahrzehnts oder mehr an vielen Hochzeiten teilzunehmen. Die Erfahrung hat mich gelehrt, dass Fotografie nicht nur Ort, Licht oder Komposition ist — es ist das Gefühl, das in einem Moment eingefangen wird. Ich fotografiere Beziehungen, kleine Gesten und diese aufrichtigen Momente, die jede Hochzeit einzigartig machen.",
+      "captureText": "Es geht darum, die Feinheiten der Beziehungen einzufangen, die jede Hochzeit einzigartig machen.",
+      "content2": "Mein Ziel ist, dass Sie beim Betrachten der Fotos dieselbe Freude, Nostalgie oder das Lächeln erneut erleben, das Sie an diesem Tag hatten. Es geht nicht um 'perfekte Fotografie', sondern um die Geschichte dahinter — die Geschichte von Familie, Freunden und Momenten, die Liebe und menschliche Verbundenheit zeigen.",
+      "content3": "Wenn Sie durch meine Fotos die Gefühle dieses Tages erneut erleben, wenn Sie lächeln, während Sie sich an einen schönen Moment mit Freunden erinnern, oder sich in einem Detail verlieren, das Sie nicht bemerkt haben — dann habe ich meine Arbeit getan. Und wenn diese Fotos an den schwersten Tagen ein wenig Licht bringen, ist das die größte Ehre, die ich als Fotograf haben kann.",
+      "linkToText": "Lass uns anfangen"
+    }
+  },
+
+  "about": {
+    "intro": [
+      "Ich bin Riard Bllaca, ein professioneller Fotograf mit Sitz in Prishtina und über einem Jahrzehnt Erfahrung darin, beeindruckende visuelle Geschichten einzufangen. Meine Arbeit erstreckt sich über eine Vielzahl von Projekten, von Hochzeiten und Porträts bis hin zu kommerzieller Fotografie, wobei jedes mit Kreativität, Präzision und Zielstrebigkeit angegangen wird.",
+      "Durch die Kombination von technischem Können mit einem scharfen Auge für Details liefere ich Bilder, die nicht nur visuell beeindruckend sind, sondern nach den höchsten professionellen Standards erstellt werden."
+    ],
+    "buttonText": "Kontakt aufnehmen"
+  }
+}

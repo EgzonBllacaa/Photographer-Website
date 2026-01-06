@@ -1,7 +1,10 @@
 import { Link } from "react-router";
 import FadeIn from "../components/FadeIn";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="max-w-3xl flex flex-col gap-10 mx-auto mt-40 mb-10">
       <FadeIn>
@@ -15,22 +18,15 @@ const About = () => {
       </FadeIn>
       <FadeIn>
         <div className="flex flex-col gap-3 items-center text-center text-zinc-600 leading-loose">
-          <p>
-            I’m Riard Bllaca, a professional photographer based in Prishtina
-            with over a decade of experience capturing compelling visual
-            stories. My work spans a diverse range of projects, from weddings
-            and portraits to commercial photography, each approached with
-            creativity, precision, and purpose.
-          </p>
-          <p>
-            By blending technical mastery with a sharp eye for detail, I deliver
-            images that are not only visually striking but crafted to the
-            highest professional standards.
-          </p>
+          {t("about.intro", { returnObjects: true }).map(
+            (paragraph: string, idx: number) => (
+              <p key={idx}>{paragraph}</p>
+            )
+          )}
         </div>
       </FadeIn>
       <button className="py-4 px-10 border-2 border-amber-800 hover:bg-amber-800 hover:text-white hover:cursor-pointer w-fit mx-auto text-amber-900">
-        <Link to={"/contact"}>Get in Touch</Link>
+        <Link to={"/contact"}>{t("about.buttonText")}</Link>
       </button>
     </div>
   );

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import CoverLetter from "../components/CoverLetter";
 import FullWidth from "../components/FullWidth";
 import PhotoGallery from "../components/PhotoGallery";
+import { useTranslation } from "react-i18next";
 
 // { src: "/medina.webp", alt: "Hero img" },
 // { src: "horizontal_2.webp", alt: "Hero img" },
@@ -169,6 +170,7 @@ export const images2 = [
 ];
 
 const Home = () => {
+  const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -201,14 +203,10 @@ const Home = () => {
       </FullWidth>
 
       <CoverLetter
-        heading="Human Connection is a beautiful thing"
-        content="And is at the heart of my photography. I’m drawn to the authentic,
-        subtle moments that often go unnoticed—the quiet glances, gentle
-        touches, and soft smiles that weave together the story of your special day. My goal is to capture these fleeting, genuine interactions,
-        preserving the emotions and connections that make your day uniquely
-        yours."
+        heading={t("coverLetter.heading")}
+        content={t("coverLetter.content")}
         linkTo="about"
-        linkToText="More about Riard"
+        linkToText={t("coverLetter.linkText")}
       />
       <PhotoGallery />
     </div>
