@@ -12,13 +12,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Celebrating love and new beginnings 💍❤️",
-      de: "Liebe und neue Anfänge feiern 💍❤️",
-      al: "Festojmë dashurinë dhe fillimet e reja 💍❤️",
     },
   },
   {
@@ -32,8 +28,6 @@ export const sections = [
     },
     content: {
       en: "A magical day filled with joy and laughter ✨🥂",
-      de: "Ein magischer Tag voller Freude und Lachen ✨🥂",
-      al: "Një ditë magjike plot gëzim dhe buzëqeshje ✨🥂",
     },
   },
   {
@@ -42,13 +36,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Two hearts becoming one 💕👰🤵",
-      de: "Zwei Herzen werden eins 💕👰🤵",
-      al: "Dy zemra bëhen një 💕👰🤵",
     },
   },
   {
@@ -57,13 +47,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "A lifetime of happiness starts here 🎉💖",
-      de: "Ein Leben voller Glück beginnt hier 🎉💖",
-      al: "Një jetë plot lumturi fillon këtu 🎉💖",
     },
   },
   {
@@ -72,13 +58,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Moments of love captured forever 📸💑",
-      de: "Momente der Liebe für immer festgehalten 📸💑",
-      al: "Momentet e dashurisë së kapur përgjithmonë 📸💑",
     },
   },
   {
@@ -87,13 +69,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Smiles, tears, and memories to cherish 🌸💞",
-      de: "Lächeln, Tränen und Erinnerungen zum Schätzen 🌸💞",
-      al: "Buzëqeshje, lot dhe kujtime për t'u dashuruar 🌸💞",
     },
   },
   {
@@ -102,13 +80,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Cherishing every beautiful moment 🎉💖",
-      de: "Jeden schönen Moment schätzen 🎉💖",
-      al: "Duke vlerësuar çdo moment të bukur 🎉💖",
     },
   },
   {
@@ -117,13 +91,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Love, laughter, and happily ever after 💕🥂",
-      de: "Liebe, Lachen und ein glückliches Leben danach 💕🥂",
-      al: "Dashuri, qeshje dhe jetë e lumtur më pas 💕🥂",
     },
   },
   {
@@ -132,13 +102,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Capturing the essence of love 🌸💑",
-      de: "Das Wesen der Liebe einfangen 🌸💑",
-      al: "Kapja e thelbit të dashurisë 🌸💑",
     },
   },
   {
@@ -147,13 +113,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "A promise of forever 💍✨",
-      de: "Ein Versprechen für immer 💍✨",
-      al: "Një premtim përgjithmonë 💍✨",
     },
   },
   {
@@ -162,13 +124,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Two souls, one journey 💖🥰",
-      de: "Zwei Seelen, eine Reise 💖🥰",
-      al: "Dy shpirtëra, një udhëtim 💖🥰",
     },
   },
   {
@@ -177,13 +135,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Celebrating love and commitment 🥂💌",
-      de: "Liebe und Engagement feiern 🥂💌",
-      al: "Festimi i dashurisë dhe angazhimit 🥂💌",
     },
   },
   {
@@ -192,13 +146,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "A beautiful beginning together 🌹💑",
-      de: "Ein wunderschöner Anfang zusammen 🌹💑",
-      al: "Një fillim i bukur së bashku 🌹💑",
     },
   },
   {
@@ -207,13 +157,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "The perfect couple, forever and always 💕💫",
-      de: "Das perfekte Paar, für immer und ewig 💕💫",
-      al: "Çifti perfekt, përgjithmonë dhe gjithmonë 💕💫",
     },
   },
   {
@@ -222,13 +168,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "The perfect couple, forever and always 💕💫",
-      de: "Das perfekte Paar, für immer und ewig 💕💫",
-      al: "Çifti perfekt, përgjithmonë dhe gjithmonë 💕💫",
     },
   },
   {
@@ -237,13 +179,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "The perfect couple, forever and always 💕💫",
-      de: "Das perfekte Paar, für immer und ewig 💕💫",
-      al: "Çifti perfekt, përgjithmonë dhe gjithmonë 💕💫",
     },
   },
   {
@@ -252,13 +190,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "The perfect couple, forever and always 💕💫",
-      de: "Das perfekte Paar, für immer und ewig 💕💫",
-      al: "Çifti perfekt, përgjithmonë dhe gjithmonë 💕💫",
     },
   },
   {
@@ -267,13 +201,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "The perfect couple, forever and always 💕💫",
-      de: "Das perfekte Paar, für immer und ewig 💕💫",
-      al: "Çifti perfekt, përgjithmonë dhe gjithmonë 💕💫",
     },
   },
   {
@@ -282,13 +212,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "The perfect couple, forever and always 💕💫",
-      de: "Das perfekte Paar, für immer und ewig 💕💫",
-      al: "Çifti perfekt, përgjithmonë dhe gjithmonë 💕💫",
     },
   },
   {
@@ -297,13 +223,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "The perfect couple, forever and always 💕💫",
-      de: "Das perfekte Paar, für immer und ewig 💕💫",
-      al: "Çifti perfekt, përgjithmonë dhe gjithmonë 💕💫",
     },
   },
   {
@@ -312,13 +234,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "The perfect couple, forever and always 💕💫",
-      de: "Das perfekte Paar, für immer und ewig 💕💫",
-      al: "Çifti perfekt, përgjithmonë dhe gjithmonë 💕💫",
     },
   },
   {
@@ -327,13 +245,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "The perfect couple, forever and always 💕💫",
-      de: "Das perfekte Paar, für immer und ewig 💕💫",
-      al: "Çifti perfekt, përgjithmonë dhe gjithmonë 💕💫",
     },
   },
   {
@@ -342,13 +256,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "The perfect couple, forever and always 💕💫",
-      de: "Das perfekte Paar, für immer und ewig 💕💫",
-      al: "Çifti perfekt, përgjithmonë dhe gjithmonë 💕💫",
     },
   },
   {
@@ -357,13 +267,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Cherishing every moment together ❤️📸",
-      de: "Jeden Moment zusammen schätzen ❤️📸",
-      al: "Duke vlerësuar çdo moment së bashku ❤️📸",
     },
   },
   {
@@ -372,13 +278,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "A day full of love, joy, and memories 🎉💖",
-      de: "Ein Tag voller Liebe, Freude und Erinnerungen 🎉💖",
-      al: "Një ditë plot dashuri, gëzim dhe kujtime 🎉💖",
     },
   },
   {
@@ -387,13 +289,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Creating memories that last a lifetime 💕📸",
-      de: "Erinnerungen schaffen, die ein Leben lang halten 💕📸",
-      al: "Krijimi i kujtimeve që zgjasin një jetë 💕📸",
     },
   },
   {
@@ -402,13 +300,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Moments of pure happiness 💖✨",
-      de: "Momente reinen Glücks 💖✨",
-      al: "Momentet e lumturisë së pastër 💖✨",
     },
   },
   {
@@ -417,13 +311,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "A magical celebration of love 💍🎉",
-      de: "Eine magische Feier der Liebe 💍🎉",
-      al: "Një festim magjik i dashurisë 💍🎉",
     },
   },
   {
@@ -432,13 +322,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Capturing smiles and laughter 💕📸",
-      de: "Lächeln und Lachen einfangen 💕📸",
-      al: "Kapja e buzëqeshjeve dhe të qeshurave 💕📸",
     },
   },
   {
@@ -447,13 +333,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "A day filled with love and joy ✨💖",
-      de: "Ein Tag voller Liebe und Freude ✨💖",
-      al: "Një ditë e mbushur me dashuri dhe gëzim ✨💖",
     },
   },
   {
@@ -462,13 +344,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Happily ever after starts here 💍❤️",
-      de: "Glücklich bis ans Ende beginnt hier 💍❤️",
-      al: "Jetë e lumtur fillon këtu 💍❤️",
     },
   },
   {
@@ -477,13 +355,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Memories frozen in time 📸💖",
-      de: "Erinnerungen in der Zeit eingefroren 📸💖",
-      al: "Kujtime të ngrirë në kohë 📸💖",
     },
   },
   {
@@ -492,13 +366,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Celebrating love and laughter 🎉💕",
-      de: "Liebe und Lachen feiern 🎉💕",
-      al: "Festimi i dashurisë dhe të qeshurave 🎉💕",
     },
   },
   {
@@ -507,13 +377,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "A day to remember forever 💖✨",
-      de: "Ein Tag, den man für immer in Erinnerung behält 💖✨",
-      al: "Një ditë për t'u kujtuar përgjithmonë 💖✨",
     },
   },
   {
@@ -522,13 +388,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "The start of a beautiful journey 💕💍",
-      de: "Der Beginn einer wunderschönen Reise 💕💍",
-      al: "Fillimi i një udhëtimi të bukur 💕💍",
     },
   },
   {
@@ -537,13 +399,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Moments of love captured beautifully 📸💖",
-      de: "Momente der Liebe wunderschön eingefangen 📸💖",
-      al: "Momentet e dashurisë të kapura bukur 📸💖",
     },
   },
   {
@@ -552,13 +410,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Together forever 💍💖",
-      de: "Für immer zusammen 💍💖",
-      al: "Së bashku përgjithmonë 💍💖",
     },
   },
   {
@@ -567,13 +421,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "A beautiful beginning 🌹✨",
-      de: "Ein wunderschöner Anfang 🌹✨",
-      al: "Një fillim i bukur 🌹✨",
     },
   },
   {
@@ -582,13 +432,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "A beautiful beginning 🌹✨",
-      de: "Ein wunderschöner Anfang 🌹✨",
-      al: "Një fillim i bukur 🌹✨",
     },
   },
   {
@@ -597,13 +443,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Cherishing each moment together 💖📸",
-      de: "Jeden Moment zusammen schätzen 💖📸",
-      al: "Duke vlerësuar çdo moment së bashku 💖📸",
     },
   },
   {
@@ -612,13 +454,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "A love story in the making 💕💑",
-      de: "Eine Liebesgeschichte im Entstehen 💕💑",
-      al: "Një histori dashurie në krijim 💕💑",
     },
   },
   {
@@ -627,13 +465,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Together is a wonderful place to be 💖✨",
-      de: "Zusammen zu sein ist ein wunderbarer Ort 💖✨",
-      al: "Së bashku është një vend i mrekullueshëm për të qenë 💖✨",
     },
   },
   {
@@ -642,13 +476,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Forever and always 💍❤️",
-      de: "Für immer und ewig 💍❤️",
-      al: "Përgjithmonë dhe gjithmonë 💍❤️",
     },
   },
   {
@@ -657,13 +487,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Smiles, laughter, and love 🌸💖",
-      de: "Lächeln, Lachen und Liebe 🌸💖",
-      al: "Buzëqeshje, të qeshura dhe dashuri 🌸💖",
     },
   },
   {
@@ -672,13 +498,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Capturing the perfect moment 💕📸",
-      de: "Den perfekten Moment einfangen 💕📸",
-      al: "Kapja e momentit të përsosur 💕📸",
     },
   },
   {
@@ -687,13 +509,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "A day full of love and joy 💖✨",
-      de: "Ein Tag voller Liebe und Freude 💖✨",
-      al: "Një ditë plot dashuri dhe gëzim 💖✨",
     },
   },
   {
@@ -702,13 +520,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Cherishing memories together 💍💑",
-      de: "Gemeinsame Erinnerungen schätzen 💍💑",
-      al: "Vlerësimi i kujtimeve së bashku 💍💑",
     },
   },
   {
@@ -717,13 +531,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "A celebration of love and commitment 💖🥂",
-      de: "Eine Feier der Liebe und des Engagements 💖🥂",
-      al: "Një festim i dashurisë dhe angazhimit 💖🥂",
     },
   },
   {
@@ -732,13 +542,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Engagement",
-      de: "Verlobung",
-      al: "Fejesa",
     },
     content: {
       en: "Two hearts, one love 💍❤️",
-      de: "Zwei Herzen, eine Liebe 💍❤️",
-      al: "Dy zemra, një dashuri 💍❤️",
     },
   },
   {
@@ -747,13 +553,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "A day to remember forever 💕✨",
-      de: "Ein Tag, den man für immer in Erinnerung behält 💕✨",
-      al: "Një ditë për t'u kujtuar përgjithmonë 💕✨",
     },
   },
   {
@@ -762,13 +564,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Happily ever after starts now ✨👰🤵",
-      de: "Glücklich bis ans Ende beginnt jetzt ✨👰🤵",
-      al: "Jetë e lumtur fillon tani ✨👰🤵",
     },
   },
   {
@@ -777,13 +575,9 @@ export const sections = [
     title: "",
     tagName: {
       en: "Weddings",
-      de: "Hochzeiten",
-      al: "Dasma",
     },
     content: {
       en: "Memories of a lifetime 💖📸",
-      de: "Erinnerungen eines Lebens 💖📸",
-      al: "Kujtime të një jetë 💖📸",
     },
   },
 ];
@@ -1003,7 +797,7 @@ const Portfolio = () => {
                   <img
                     src={section.imgSrc}
                     sizes="(max-width: 600px) 600px, (max-width: 1200px) 1200px, 1800px"
-                    alt={section.title || section.tagName[language]}
+                    alt={section.title || section.tagName}
                     className="w-full cursor-pointer transition-opacity"
                     // 3. The Counter Logic
                     onLoad={() => {
@@ -1011,12 +805,8 @@ const Portfolio = () => {
                     }}
                   />
                   <h3 className="text-md mt-2">{section.title}</h3>
-                  <p className="text-zinc-500 text-sm">
-                    {section.tagName[language]}
-                  </p>
-                  <p className="text-sm text-zinc-500">
-                    {section.content[language]}
-                  </p>
+                  <p className="text-zinc-500 text-sm">{section.tagName.en}</p>
+                  <p className="text-sm text-zinc-500">{section.content.en}</p>
                 </div>
               </FadeIn>
             ) : null

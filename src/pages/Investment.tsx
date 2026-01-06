@@ -5,9 +5,19 @@ import FadeIn from "../components/FadeIn";
 import FullWidth from "../components/FullWidth";
 import PricingSection from "../components/PricingSection";
 
+type CoverLetterTranslation = {
+  content: string;
+  captureText?: string;
+  content2?: string;
+  content3?: string;
+  linkToText: string;
+};
+
 const Investment = () => {
   const { t } = useTranslation();
-  const coverLetterData = t("investment.coverLetter", { returnObjects: true });
+  const coverLetterData = t("investment.coverLetter", {
+    returnObjects: true,
+  }) as CoverLetterTranslation;
 
   return (
     <div>
@@ -21,14 +31,16 @@ const Investment = () => {
         />
       </FullWidth>
 
-      <CoverLetter
-        content={coverLetterData.content}
-        captureText={coverLetterData.captureText}
-        content2={coverLetterData.content2}
-        content3={coverLetterData.content3}
-        linkTo="contact"
-        linkToText={coverLetterData.linkToText}
-      />
+      {Array.isArray(coverLetterData) && (
+        <CoverLetter
+          content={coverLetterData.content}
+          captureText={coverLetterData.captureText}
+          content2={coverLetterData.content2}
+          content3={coverLetterData.content3}
+          linkTo="contact"
+          linkToText={coverLetterData.linkToText}
+        />
+      )}
       <PricingSection />
       <FadeIn>
         <ClientWords />
