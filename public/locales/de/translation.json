@@ -43,12 +43,55 @@
   },
 
   "investment": {
-    "coverLetter": {
-      "content": "Ich hatte die Ehre, im Laufe eines Jahrzehnts oder mehr an vielen Hochzeiten teilzunehmen. Die Erfahrung hat mich gelehrt, dass Fotografie nicht nur Ort, Licht oder Komposition ist — es ist das Gefühl, das in einem Moment eingefangen wird. Ich fotografiere Beziehungen, kleine Gesten und diese aufrichtigen Momente, die jede Hochzeit einzigartig machen.",
-      "captureText": "Es geht darum, die Feinheiten der Beziehungen einzufangen, die jede Hochzeit einzigartig machen.",
-      "content2": "Mein Ziel ist, dass Sie beim Betrachten der Fotos dieselbe Freude, Nostalgie oder das Lächeln erneut erleben, das Sie an diesem Tag hatten. Es geht nicht um 'perfekte Fotografie', sondern um die Geschichte dahinter — die Geschichte von Familie, Freunden und Momenten, die Liebe und menschliche Verbundenheit zeigen.",
-      "content3": "Wenn Sie durch meine Fotos die Gefühle dieses Tages erneut erleben, wenn Sie lächeln, während Sie sich an einen schönen Moment mit Freunden erinnern, oder sich in einem Detail verlieren, das Sie nicht bemerkt haben — dann habe ich meine Arbeit getan. Und wenn diese Fotos an den schwersten Tagen ein wenig Licht bringen, ist das die größte Ehre, die ich als Fotograf haben kann.",
-      "linkToText": "Lass uns anfangen"
+    "pricing": {
+      "sections": [
+        {
+          "title": "Basic | 399€",
+          "contentTitle": "Ideal für Paare, die etwas Einfaches und Elegantes möchten.",
+          "content": [
+            "Fotoshooting vor der Hochzeit (1,5 Stunden)",
+            "300–500 Fotos",
+            "30 professionell bearbeitete Fotos",
+            "1 kurzes „Love Story“-Video (20–40 Sekunden)",
+            "Location innerhalb Kosovos",
+            "Fotos online geliefert"
+          ],
+          "cta": "Jetzt buchen",
+          "imgSrc": "/Photo_6.webp"
+        },
+        {
+          "title": "Standard | 599€",
+          "contentTitle": "Eine ausgewogene Option für Paare, die mehr Details möchten.",
+          "content": [
+            "Fotoshooting vor der Hochzeit",
+            "1 Fotograf am Hochzeitstag",
+            "500–800 Fotos insgesamt",
+            "Alle Fotos mit Farbkorrektur",
+            "50 professionell bearbeitete Fotos",
+            "1 Love Story Video (30–60 Sekunden)",
+            "Lieferung: USB + online",
+            "Location innerhalb Kosovos"
+          ],
+          "cta": "Jetzt buchen",
+          "imgSrc": "/Snap_4.jpg"
+        },
+        {
+          "title": "Premium | 799€",
+          "contentTitle": "Für Paare, die eine umfassende Begleitung mit zwei Perspektiven wünschen.",
+          "content": [
+            "Fotoshooting vor der Hochzeit",
+            "2 Fotografen am Hochzeitstag",
+            "700–1000 Fotos insgesamt",
+            "Alle Fotos mit Farbkorrektur",
+            "70 professionell bearbeitete Fotos",
+            "1 Love Story Video (30–60 Sekunden)",
+            "Lieferung: USB + online",
+            "Location innerhalb Kosovos"
+          ],
+          "cta": "Jetzt buchen",
+          "imgSrc": "/marigona.webp"
+        }
+      ]
     }
   },
 

@@ -42,12 +42,55 @@
   },
 
   "investment": {
-    "coverLetter": {
-      "content": "Kam nderin të jem pjesë e shumë dasmave gjatë një dekade e më shumë. Përvoja më ka mësuar se fotografia nuk është thjesht vendi, drita apo kompozicioni — është ndjenja që kapet në një moment. Unë fotografoj marrëdhëniet, gjestet e vogla dhe ato çaste të sinqerta që e bëjnë çdo dasmë të veçantë.",
-      "captureText": "Bëhet fjalë për kapjen e hollësive të marrëdhënieve që e bëjnë çdo dasmë unike.",
-      "content2": "Qëllimi im është që, kur të shikoni fotot, të përjetoni sërish të njëjtin gëzim, mallëngjim apo buzëqeshje që patët atë ditë. Nuk ka të bëjë me 'fotografinë perfekte', por me historinë që qëndron pas saj — historinë e familjes, miqve dhe momenteve që tregojnë dashurinë dhe lidhjen njerëzore.",
-      "content3": "Nëse përmes fotove të mia përjetoni sërish ndjenjat e asaj dite, nëse buzëqeshni duke kujtuar një moment të bukur me miqtë, apo humbisni në një detaj që nuk e keni vënë re — atëherë unë e kam bërë punën time. Dhe nëse në ditët më të vështira këto fotografi ju sjellin pak dritë, ky është nderi më i madh që mund të kem si fotograf.",
-      "linkToText": "Le të fillojmë"
+    "pricing": {
+      "sections": [
+        {
+          "title": "Basic | 399€",
+          "contentTitle": "Ideale për çiftet që duan diçka të thjeshtë dhe elegante.",
+          "content": [
+            "Fotosesion para dasmës (1.5 orë)",
+            "300–500 fotografi",
+            "30 fotografi të edituara profesionalisht",
+            "1 video e shkurtër “Love Story” (20–40 sekonda)",
+            "Lokacion brenda Kosovës",
+            "Fotot dorëzohen online"
+          ],
+          "cta": "Rezervo tani",
+          "imgSrc": "/Photo_6.webp"
+        },
+        {
+          "title": "Standard | 599€",
+          "contentTitle": "Opsion i balancuar për çiftet që duan më shumë detaje.",
+          "content": [
+            "Fotosesion para dasmës",
+            "1 fotograf në ditën e dasmës",
+            "500–800 fotografi gjithsej",
+            "Të gjitha fotot me korrigjim ngjyrash",
+            "50 fotografi të edituara profesionalisht",
+            "1 video Love Story (30–60 sekonda)",
+            "Dorëzimi: USB + online",
+            "Lokacion brenda Kosovës"
+          ],
+          "cta": "Rezervo tani",
+          "imgSrc": "/Snap_4.jpg"
+        },
+        {
+          "title": "Premium | 799€",
+          "contentTitle": "Për çiftet që duan mbulim të plotë dhe dy këndvështrime.",
+          "content": [
+            "Fotosesion para dasmës",
+            "2 fotografë në ditën e dasmës",
+            "700–1000 fotografi gjithsej",
+            "Të gjitha fotot me korrigjim ngjyrash",
+            "70 fotografi të edituara profesionalisht",
+            "1 video Love Story (30–60 sekonda)",
+            "Dorëzimi: USB + online",
+            "Lokacion brenda Kosovës"
+          ],
+          "cta": "Rezervo tani",
+          "imgSrc": "/marigona.webp"
+        }
+      ]
     }
   },
 

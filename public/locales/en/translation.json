@@ -40,12 +40,55 @@
   },
 
   "investment": {
-    "coverLetter": {
-      "content": "I have had the honor of being part of many weddings over a decade or more. Experience has taught me that photography is not just location, light, or composition — it’s the feeling captured in a moment. I photograph relationships, small gestures, and those sincere moments that make every wedding unique.",
-      "captureText": "It’s about capturing the intricacies of the relationships that make every wedding unique.",
-      "content2": "My goal is that when you look at the photos, you relive the same joy, nostalgia, or smile you had that day. It’s not about 'perfect photography' but about the story behind it — the story of family, friends, and moments that show love and human connection.",
-      "content3": "If through my photos you relive the feelings of that day, if you smile recalling a beautiful moment with friends, or get lost in a detail you didn’t notice — then I have done my job. And if on the hardest days these photos bring you a little light, that is the greatest honor I can have as a photographer.",
-      "linkToText": "Let's Get Started"
+    "pricing": {
+      "sections": [
+        {
+          "title": "Basic | 399€",
+          "contentTitle": "Perfect for couples who want something simple and elegant.",
+          "content": [
+            "Pre-wedding photoshoot (1.5 hours)",
+            "300–500 photos",
+            "30 professionally edited photos",
+            "1 short “Love Story” video (20–40 seconds)",
+            "Location within Kosovo",
+            "Photos delivered online"
+          ],
+          "cta": "Book now",
+          "imgSrc": "/Photo_6.webp"
+        },
+        {
+          "title": "Standard | 599€",
+          "contentTitle": "A balanced option for couples who want more detail.",
+          "content": [
+            "Pre-wedding photoshoot",
+            "1 photographer on the wedding day",
+            "500–800 photos in total",
+            "All photos color corrected",
+            "50 professionally edited photos",
+            "1 Love Story video (30–60 seconds)",
+            "Delivery: USB + online",
+            "Location within Kosovo"
+          ],
+          "cta": "Book now",
+          "imgSrc": "/Snap_4.jpg"
+        },
+        {
+          "title": "Premium | 799€",
+          "contentTitle": "For couples who want full coverage and two perspectives.",
+          "content": [
+            "Pre-wedding photoshoot",
+            "2 photographers on the wedding day",
+            "700–1000 photos in total",
+            "All photos color corrected",
+            "70 professionally edited photos",
+            "1 Love Story video (30–60 seconds)",
+            "Delivery: USB + online",
+            "Location within Kosovo"
+          ],
+          "cta": "Book now",
+          "imgSrc": "/marigona.webp"
+        }
+      ]
     }
   },
 
