@@ -5,11 +5,11 @@ import "./index.css";
 import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
-  // <StrictMode>
-  <Router>
-    <div className="px-3 md:px-0 ">
-      <App />
-    </div>
-  </Router>
-  // </StrictMode>
+  <StrictMode>
+    <Router>
+      <div className="px-3 md:px-0 ">
+        <App />
+      </div>
+    </Router>
+  </StrictMode>
 );

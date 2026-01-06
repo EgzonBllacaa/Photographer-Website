@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect, useRef, useState } from "react";
 import ImageModal from "../components/ImageModal";
 import FadeIn from "../components/FadeIn";
@@ -443,7 +442,7 @@ const Portfolio = () => {
   const [selected, setSelected] = useState<null | string>(null);
   const [visibleImages, setVisibleImages] = useState<typeof sections>([]);
   const [cursor, setCursor] = useState<string | null>(null);
-  const [scrollDisabled, setScrollDisabled] = useState(false);
+  const [_, setScrollDisabled] = useState(false);
 
   // State to track if we are fetching the NEXT page
   const [isFetchingMore, setIsFetchingMore] = useState(false);
