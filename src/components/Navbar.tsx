@@ -1,10 +1,10 @@
-import i18next from "i18next";
 import { useEffect, useState } from "react";
-// import { useTranslation } from "react-i18next";
 import { BsTiktok } from "react-icons/bs";
 import { FiInstagram, FiLinkedin } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FcGlobe } from "react-icons/fc";
 import { Link, useLocation } from "react-router";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,9 +13,14 @@ const Navbar = () => {
   const [isInfoOpen, setIsInfoOpen] = useState(false);
   // const { t } = useTranslation();
   const [isLangShown, setIsLangShown] = useState(false);
+  const { i18n } = useTranslation();
 
   const portfolioPage = location.pathname === "/portfolio";
   console.log("Location", location.pathname);
+
+  const currentLang = i18n.language;
+  console.log(currentLang === "de");
+  console.log(currentLang);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -174,69 +179,85 @@ const Navbar = () => {
         </ul>
 
         {/* Center logo */}
-        <span className="lg:text-4xl sm:text-3xl text-lg  flex flex-1 sm:text-nowrap text-center justify-center font-serif">
-          <Link
-            to={"/"}
-            className={`font-light ${
-              isScrolled ? " text-white " : " text-black "
-            }`}
-          >
-            Riard Bllaca Photography
-          </Link>
-        </span>
-        {!portfolioPage && (
-          <div className="flex  gap-4 justify-center items-center z-70  mb-4 text-black">
-            <button
-              className={`bg-white px-5 py-2 rounded-2xl  `}
-              onClick={() => setIsLangShown((prev) => !prev)}
+        <div className="flex gap-4 items-center  lg:flex-col relative">
+          <span className="lg:text-4xl sm:text-3xl text-lg  flex flex-1 sm:text-nowrap text-center justify-center font-serif">
+            <Link
+              to={"/"}
+              className={`font-light ${
+                isScrolled ? " text-white " : " text-black "
+              }`}
             >
-              Change Language
-            </button>
-            {isLangShown && (
-              <div className=" w-full flex  gap-2 bg-zinc-50 rounded-xl py-2 max-w-44 ">
-                <div className="flex justify-between mx-auto max-w-22 w-full hover:bg-zinc-200 cursor-pointer ">
-                  <button
-                    onClick={() => i18next.changeLanguage("en")}
-                    className={`mr-2  `}
+              Riard Bllaca Photography
+            </Link>
+          </span>
+          {!portfolioPage && (
+            <div className="flex relative gap-4 justify-center items-center z-70 text-black">
+              <button
+                className={`bg-white p-2 rounded-2xl cursor-pointer`}
+                onClick={() => setIsLangShown((prev) => !prev)}
+              >
+                <FcGlobe />
+              </button>
+              {isLangShown && (
+                <div className="w-full flex flex-col absolute top-10 gap-2 bg-zinc-50 rounded-xl py-2 min-w-48 px-2">
+                  <div
+                    onClick={() => {
+                      i18n.changeLanguage("en");
+                      setIsLangShown(false);
+                    }}
+                    className={`flex items-center justify-between mx-auto max-w-22 w-full cursor-pointer ${
+                      currentLang === "en" &&
+                      "bg-white shadow-md ring-1 ring-zinc-200 scale-[1.02] hover:bg-zinc-100 hover:shadow-sm "
+                    }`}
                   >
-                    EN{" "}
-                  </button>
-                  <img
-                    src="/england-flag.png"
-                    className="max-w-8 w-full rounded-xl"
-                    alt=""
-                  />
-                </div>
-                <div className="flex justify-between mx-auto max-w-22  w-full hover:bg-zinc-200 cursor-pointer ">
-                  <button
-                    onClick={() => i18next.changeLanguage("de")}
-                    className={`mr-2  `}
+                    <button className={`mr-2  cursor-pointer `}>EN </button>
+                    <img
+                      src="/england-flag.png"
+                      className="min-w-8 max-w-8 w-full rounded-xl"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    onClick={() => {
+                      i18n.changeLanguage("de");
+                      setIsLangShown(false);
+                    }}
+                    className={`flex items-center justify-between mx-auto max-w-22  w-full cursor-pointer ${
+                      currentLang === "de" &&
+                      "bg-white shadow-md ring-1 ring-zinc-200 scale-[1.02] hover:bg-zinc-100 hover:shadow-sm"
+                    }`}
                   >
-                    DE{" "}
-                  </button>
-                  <img
-                    src="/german-flag.png"
-                    className="max-w-8 w-full rounded-xl"
-                    alt=""
-                  />
-                </div>
-                <div className="flex justify-between mx-auto max-w-22  w-full hover:bg-zinc-200 cursor-pointer ">
-                  <button
-                    className={`mr-2 text-black`}
-                    onClick={() => i18next.changeLanguage("sq")}
+                    <button className={`mr-2  cursor-pointer `}>DE </button>
+                    <img
+                      src="/german-flag.png"
+                      className="min-w-8 max-w-8   h-full w-full rounded-xl"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    onClick={() => {
+                      i18n.changeLanguage("sq");
+                      setIsLangShown(false);
+                    }}
+                    className={`flex items-center justify-between mx-auto max-w-22  w-full cursor-pointer ${
+                      currentLang === "sq" &&
+                      "bg-white shadow-md ring-1 ring-zinc-200 scale-[1.02] hover:bg-zinc-100 hover:shadow-sm"
+                    }`}
                   >
-                    AL
-                  </button>
-                  <img
-                    src="/albania-flag.png"
-                    className="max-w-8 w-full rounded-xl"
-                    alt=""
-                  />
+                    <button className={`mr-2 text-black cursor-pointer `}>
+                      AL
+                    </button>
+                    <img
+                      src="/albania-flag.png"
+                      className="min-w-8 max-w-8  w-full rounded-xl"
+                      alt=""
+                    />
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
-        )}
+              )}
+            </div>
+          )}
+        </div>
 
         {/* Desktop icons */}
         <div className="lg:flex hidden  flex-1 justify-end items-center ">
